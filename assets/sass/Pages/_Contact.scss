@@ -1,0 +1,70 @@
+#main-contact{
+    width: 100%;
+    background-color: black;
+}
+#section-contact{
+    padding-top: 200px;
+    padding-bottom: 60px;
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    article{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        h1{
+            color: wheat;
+            font-size: 5em;
+            margin: 0;
+        }
+        p{
+            color: white;
+            font-size: 2em;
+        }
+        #social-contact{
+            display: flex;
+            p{
+                color: white;
+                font-size: 1.5em;
+                margin: 0;
+                margin-right: 20px;
+            }
+            svg{
+                margin-left: 5px;
+            }
+        }
+    }
+    aside{
+        width: 50%;
+        padding: 50px 0px;
+        background-color: rgb(15, 15, 15);
+        form{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            label{
+                color: wheat;
+                font-size: 1.7em;
+                margin-bottom: 20px;
+            }
+            input, textarea{
+                height: 50px;
+                margin-bottom: 40px;
+                background-color: black;
+                border: none;
+                color: white;
+            }
+            textarea{
+                height: 150px;
+            }
+            button{
+                width: 120px;
+                height: 40px;
+                font-size: 1.2em;
+            }
+        }
+    }
+}
