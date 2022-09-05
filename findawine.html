@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="FinDaWine est une Application Web Progressive mise à disposition des clients afin qu'ils puissent rapidement trouver le meilleur vin pour offrir ou consommer.">
+        <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FindAWine - Application Web</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@500&family=Bebas+Neue&family=Chakra+Petch:wght@700&family=Fjalla+One&family=Kanit:wght@600&family=Lato:wght@300&family=Squada+One&family=Teko:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <div id="bloc-head">
+                <picture>
+                    <img src="assets/images/logo.webp" alt="Logo de Westcode Développement" id="logo">
+                </picture>
+                <nav id="nav-menu">
+                    <ul id="main-menu">
+                        <li><a data-link="index.html" class="links" aria-label="Aller vers l'accueil">Accueil</a></li>
+                        <li><a data-link="services.html" class="links" aria-label="Aller vers la page services">Services</a></li>
+                        <li><a data-link="portfolio.html" class="links link-menu-portfolio" aria-label="Aller vers la page réalisations">Réalisations</a></li>
+                        <li><a data-link="contact.html" class="links" aria-label="Aller vers la page de contact">Contact</a></li>
+                    </ul>
+                    <ul id="social-menu">
+                        <li><a href="https://www.facebook.com/Westcode-d%C3%A9veloppement-102062019180186" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></a></li>
+                        <li><a href="https://www.linkedin.com/company/westcode-developpement" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a></li>
+                        <li><a href="mailto:anthony.matvienko@westcode-dev.fr"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></a></li>
+                    </ul>
+                </nav>
+                <span id="burger-button" class="burger-button-visible">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="30px" height="30px" viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                    <path d="M296 2057 c-109 -61 -106 -221 5 -277 37 -19 63 -20 979 -20 916 0 942 1 979 20 113 57 113 223 0 280 -37 19 -63 20 -981 20 l-943 0 -39 -23z"/>
+                    <path d="M296 1417 c-109 -61 -106 -221 5 -277 37 -19 63 -20 979 -20 916 0 942 1 979 20 113 57 113 223 0 280 -37 19 -63 20 -981 20 l-943 0 -39 -23z"/>
+                    <path d="M296 777 c-109 -61 -106 -221 5 -277 37 -19 63 -20 979 -20 916 0 942 1 979 20 113 57 113 223 0 280 -37 19 -63 20 -981 20 l-943 0 -39 -23z"/>
+                    </g>
+                    </svg>
+                </span>
+                <span id="burger-cross" class="burger-cross-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="25px" height="25px" viewBox="0 0 256.000000 256.000000">
+                    <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                    <path d="M63 2540 c-54 -33 -78 -102 -52 -153 6 -12 255 -266 553 -564 l541 -543 -541 -542 c-298 -299 -547 -553 -553 -565 -47 -93 69 -209 162 -162 12 6 266 255 565 553 l542 541 543 -541 c298 -298 552 -547 564 -553 93 -47 209 69 162 162 -6 12 -255 266 -553 564 l-541 543 541 543 c298 298 547 552 553 564 47 93 -69 209 -162 162 -12 -6 -266 -255 -564 -553 l-543 -541 -542 541 c-299 298 -553 547 -565 553 -33 16 -74 13 -110 -9z"/>
+                    </g>
+                    </svg>
+                </span>
+            </div>
+            <nav id="nav-menu-burger" class="nav-menu-burger-hidden">
+                <ul id="main-menu-burger">
+                    <li><a data-link="index.html" class="links" aria-label="Aller vers l'accueil">Accueil</a></li>
+                    <li><a data-link="services.html" class="links" aria-label="Aller vers la page services">Services</a></li>
+                    <li><a data-link="portfolio.html" class="links link-menu-portfolio" aria-label="Aller vers la page réalisations">Réalisations</a></li>
+                    <li><a data-link="contact.html" class="links" aria-label="Aller vers la page de contact">Contact</a></li>
+                </ul>
+                <ul id="social-menu-burger">
+                    <li><a href="https://www.facebook.com/Westcode-d%C3%A9veloppement-102062019180186" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></a></li>
+                    <li><a href="https://www.linkedin.com/company/westcode-developpement" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a></li>
+                    <li><a href="mailto:anthony.matvienko@westcode-dev.fr"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="transition transition-off">
+            <img src="assets/images/logo.webp" alt="Logo de Westcode Développement" class="logo-transition">
+        </div>
+        <div id="background">
+            <img src="assets/images/keyboard/6.jpg" alt="Photo de touches de clavier en gros plan" id="background-img-customer">
+            <div id="main-prez">
+                <div id="title">
+                    <h1 id="title-site">FinDaWine Application</h1>
+                    <p id="text-site"><strong>PWA</strong> de présentation, recherche et Scan de vin</p>
+                </div>
+                <div id="img-prez">
+                    <img src="./assets/images/sites/faw-1.jpg" alt="Photo de bouteilles de vin dans une cave à vin" id="sample">
+                </div>
+            </div>
+        </div>
+        <div class="shadow-img"></div>
+        <section id="services-bloc">
+            <article id="services-box">
+                <div class="services service-1">
+                    <span class="services-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M15,0H9A5.006,5.006,0,0,0,4,5V19a5.006,5.006,0,0,0,5,5h6a5.006,5.006,0,0,0,5-5V5A5.006,5.006,0,0,0,15,0ZM9,2h6a3,3,0,0,1,3,3V16H6V5A3,3,0,0,1,9,2Zm6,20H9a3,3,0,0,1-3-3V18H18v1A3,3,0,0,1,15,22Z"/><circle cx="12" cy="20" r="1"/></svg>
+                    </span>
+                    <span class="services-text">
+                        <h3>Progressive Web App</h3>
+                    </span>
+                </div>
+                <div class="services service-2">
+                    <span class="services-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="40" height="40" viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                        <path d="M410 2551 c-76 -23 -157 -98 -181 -167 -21 -58 -21 -2150 0 -2208 17 -49 82 -121 136 -149 l40 -22 875 0 875 0 40 22 c52 28 109 88 132 138 17 37 18 96 21 880 l3 839 -338 338 -338 338 -620 -1 c-341 0 -631 -4 -645 -8z m1191 -313 c0 -137 5 -224 12 -245 22 -60 72 -117 128 -148 l54 -30 223 -3 222 -3 -2 -799 c-3 -792 -3 -799 -24 -827 -11 -15 -36 -38 -54 -50 l-33 -23 -847 0 -847 0 -33 23 c-18 12 -43 35 -54 50 -21 28 -21 28 -21 1097 0 1069 0 1069 21 1097 11 15 36 38 54 51 l33 22 583 0 584 0 1 -212z m422 -316 c-172 -4 -215 2 -254 36 -52 43 -59 73 -59 254 l0 163 225 -225 225 -225 -137 -3z"/>
+                        <path d="M1153 1750 c-37 -15 -60 -64 -66 -141 -7 -79 -11 -86 -61 -113 l-35 -19 -74 33 c-124 54 -148 41 -238 -126 -40 -74 -42 -84 -34 -120 8 -30 24 -50 78 -92 l67 -55 0 -52 0 -53 -64 -48 c-105 -77 -108 -112 -23 -259 47 -79 58 -92 94 -104 39 -14 43 -13 117 22 l76 36 44 -27 c44 -26 45 -28 51 -92 14 -146 42 -170 195 -170 153 0 181 24 195 170 6 64 7 66 51 92 l44 27 76 -36 c74 -35 78 -36 117 -22 36 12 47 25 94 104 85 147 82 182 -23 259 l-64 48 0 53 0 52 68 55 c53 42 69 62 77 92 8 36 6 46 -34 120 -90 167 -114 180 -238 126 l-74 -33 -35 19 c-50 27 -54 34 -61 113 -7 79 -30 126 -69 141 -32 12 -221 12 -251 0z m212 -147 c18 -151 15 -144 71 -173 28 -14 63 -36 79 -48 37 -29 46 -28 137 15 43 20 80 34 81 32 2 -2 21 -35 42 -74 l38 -69 -28 -21 c-15 -11 -49 -37 -75 -57 l-47 -36 2 -104 c1 -57 3 -106 4 -110 0 -3 33 -29 71 -57 39 -28 70 -54 70 -57 0 -4 -65 -127 -75 -142 -1 -1 -35 13 -76 33 -40 19 -83 35 -95 35 -12 0 -44 -15 -72 -32 -27 -18 -63 -40 -79 -49 -31 -17 -42 -51 -43 -129 -1 -77 -4 -80 -90 -80 l-78 0 -6 37 c-3 21 -8 64 -11 96 -6 52 -10 61 -37 75 -17 10 -53 32 -80 50 -28 17 -58 32 -68 32 -11 0 -53 -15 -94 -34 l-76 -35 -40 69 c-22 38 -40 71 -40 74 0 3 28 26 63 52 34 26 66 51 72 56 5 5 10 56 11 114 l2 106 -57 43 c-31 25 -65 50 -75 58 -18 13 -18 17 20 85 21 40 41 72 45 72 4 0 40 -16 80 -35 86 -41 97 -42 134 -13 16 12 51 34 79 48 56 29 63 43 65 137 2 82 2 83 91 83 l79 0 6 -47z"/>
+                        <path d="M1159 1302 c-158 -82 -193 -289 -71 -415 60 -62 105 -82 192 -82 87 0 132 20 192 82 66 68 89 158 64 247 -36 121 -133 196 -256 196 -55 0 -78 -5 -121 -28z m209 -104 c129 -79 66 -288 -88 -288 -116 0 -194 124 -142 227 45 87 145 113 230 61z"/>
+                        </g>
+                        </svg>
+                    </span>
+                    <span class="services-text">
+                        <h3>Back-Office avec Login</h3>
+                    </span>
+                </div>
+                <div class="services service-3">
+                    <span class="services-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="40" height="40" viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                        <path d="M0 2030 l0 -230 75 0 75 0 0 150 0 149 153 3 152 3 0 75 0 75 -227 3 -228 2 0 -230z"/>
+                        <path d="M2104 2246 c-3 -7 -4 -42 -2 -77 l3 -64 153 -3 152 -3 0 -149 0 -150 75 0 75 0 0 230 0 230 -225 0 c-181 0 -227 -3 -231 -14z"/>
+                        <path d="M305 1948 c-3 -7 -4 -312 -3 -678 l3 -665 225 0 225 0 0 675 0 675 -223 3 c-173 2 -224 0 -227 -10z"/>
+                        <path d="M905 1948 c-3 -7 -4 -312 -3 -678 l3 -665 75 0 75 0 0 675 0 675 -73 3 c-52 2 -74 -1 -77 -10z"/>
+                        <path d="M1205 1948 c-3 -7 -4 -312 -3 -678 l3 -665 225 0 225 0 0 675 0 675 -223 3 c-173 2 -224 0 -227 -10z"/>
+                        <path d="M1805 1948 c-3 -7 -4 -312 -3 -678 l3 -665 75 0 75 0 0 675 0 675 -73 3 c-52 2 -74 -1 -77 -10z"/>
+                        <path d="M2105 1948 c-3 -7 -4 -312 -3 -678 l3 -665 75 0 75 0 0 675 0 675 -73 3 c-52 2 -74 -1 -77 -10z"/>
+                        <path d="M0 530 l0 -230 228 2 227 3 0 75 0 75 -152 3 -153 3 0 149 0 150 -75 0 -75 0 0 -230z"/>
+                        <path d="M2410 610 l0 -149 -152 -3 -153 -3 0 -75 0 -75 228 -3 227 -2 0 230 0 230 -75 0 -75 0 0 -150z"/>
+                        </g>
+                        </svg>
+                    </span>
+                    <span class="services-text">
+                        <h3>Recherche et Scan Dynamiques</h3>
+                    </span>
+                </div>
+                <div class="services service-4">
+                    <span class="services-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="40" height="40" viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                        <path d="M407 2546 c-59 -22 -97 -57 -127 -121 -19 -39 -20 -75 -20 -1145 0 -1051 1 -1107 19 -1145 21 -45 61 -89 106 -113 27 -15 108 -17 895 -17 787 0 868 2 895 17 45 24 85 68 106 113 18 38 19 94 19 1145 0 1051 -1 1107 -19 1145 -21 45 -61 89 -106 113 -27 15 -110 17 -880 19 -699 2 -857 0 -888 -11z m1671 -192 l22 -15 0 -948 c0 -723 -3 -950 -12 -959 -17 -17 -1599 -17 -1616 0 -9 9 -12 236 -12 959 l0 948 22 15 c20 14 112 16 798 16 686 0 778 -2 798 -16z m-744 -2055 c38 -30 49 -64 36 -105 -14 -43 -44 -64 -90 -64 -46 0 -76 21 -90 64 -13 41 -2 75 36 105 34 27 74 27 108 0z"/>
+                        </g>
+                        </svg>
+                    </span>
+                    <span class="services-text">
+                        <h3>Affichage Produit Monopage</h3>
+                    </span>
+                </div>
+            </article>
+        </section>
+        <article id="customer-prez-box">
+            <div id="customer-prez-bloc" class="reveal">
+                <h2>FinDaWine Application</h2>
+                <p>FinDaWine est une <strong>Application Web Progressive</strong> qui permet à l'utilisateur de rechercher un Vin présent dans la cave du commerçant par plusieurs moyens différents.<br>
+                <strong>L'application est présentée sur Tablette</strong> disponible à l'utilisation pour les clients en magasin.<br>
+                Le client souhaitait une charte graphique simple, épurée et légèrement premium. Un logo et une couleur principale représentant le monde viticole.<br>
+                L'utilisateur peut utiliser une barre de recherche et taper directement le nom d'un vin ou filtrer par item séléctionné. La fonction principale étant de pouvoir scanner directement le code barre avec la tablette pour afficher les informations du produit.<br>
+                Un back-office avec login est également présent, permettant d'ajouter, de modifier ou de supprimer un produit (accessible via internet).</p>
+            </div>
+        </article>
+        <aside id="swiper-4-bloc">
+            <div class="swiper swiper-4 reveal">
+                <div class="swiper-wrapper swiper-wrapper-4">
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/faw-2.PNG" alt="Image de la page d'accueil de l'application Findawine">
+                    </div>
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/faw-3.PNG" alt="Image d'une page de l'application Findawine">
+                    </div>
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/faw-mobile.png" alt="Image d'une page de l'application Findawine sur appareil mobile">
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-prev-4"></div>
+                <div class="swiper-button-next swiper-button-next-4"></div>
+            </div>
+        </aside>
+        <article id="second-prez" class="second-prez-services">
+            <div id="second-prez-text-bloc" class="reveal">
+                <p>Un coup de coeur? Un projet qui vous donne des idées? Notre travail vous plait?</p>
+                <a href="contact.html"><input type="button" value="Parlons en!" id="contact-button"></a>
+            </div>
+        </article>
+        <aside id='banner-cookies' class="hidden-consent">
+            <p id='banner-txt'>En poursuivant votre navigation, sans changer les paramètres de votre navigateur, vous acceptez l'utilisation de cookies pour garantir une bonne expérience sur notre site.</p>
+            <span id="cookies-buttons-box">
+                <input type='button' value='Accepter' id='banner-button-accept'>
+                <input type='button' value='Refuser' id='banner-button-decline'>
+                <input type='button' value='Préférences' id='banner-button-pref'>
+            </span>
+        </aside>
+        <aside id="cookies-preferences" class="hidden-consent">
+            <h2>Gérer le consentement aux Cookies</h2>
+            <span id="checkbox-box">
+                <input type="checkbox" name="consent-stat" id="checkbox-stat">
+                <label for="checkbox-stat">Utilisation de Statistiques (Google Analytics)</label>
+            </span>
+            <p>Le stockage ou l’accès technique qui est utilisé exclusivement à des fins statistiques.</p>
+            <input type="button" value="Appliquer" id="validate-pref">
+        </aside>
+        <footer>
+            <div id="bloc-footer">
+                <div id="links-footer">
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li>&copy; 2022 Westcode Développement</li>
+                    </ul>
+                </div>
+                <div id="social-footer">
+                    <ul>
+                        <li><a href="https://www.facebook.com/Westcode-d%C3%A9veloppement-102062019180186" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></a></li>
+                        <li><a href="https://www.linkedin.com/company/westcode-developpement" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a></li>
+                        <li><a href="mailto:anthony.matvienko@westcode-dev.fr"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/cookies.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="assets/js/sites.js"></script>
+        <script src="assets/js/burger-menu.js"></script>
+        <script src="assets/js/animations-sites.js"></script>
+    </body>
+</html>

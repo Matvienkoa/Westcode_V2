@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Boutique E-commerce MyLaser, Configurateur de fichier .dxf, découpe métal sur mesure!">
+        <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Laser by DT Systèmes - Site Web E-Commerce</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@500&family=Bebas+Neue&family=Chakra+Petch:wght@700&family=Fjalla+One&family=Kanit:wght@600&family=Lato:wght@300&family=Squada+One&family=Teko:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <div id="bloc-head">
+                <picture>
+                    <img src="assets/images/logo.webp" alt="Logo de Westcode Développement" id="logo">
+                </picture>
+                <nav id="nav-menu">
+                    <ul id="main-menu">
+                        <li><a data-link="index.html" class="links" aria-label="Aller vers l'accueil">Accueil</a></li>
+                        <li><a data-link="services.html" class="links" aria-label="Aller vers la page services">Services</a></li>
+                        <li><a data-link="portfolio.html" class="links link-menu-portfolio" aria-label="Aller vers la page réalisations">Réalisations</a></li>
+                        <li><a data-link="contact.html" class="links" aria-label="Aller vers la page de contact">Contact</a></li>
+                    </ul>
+                    <ul id="social-menu">
+                        <li><a href="https://www.facebook.com/Westcode-d%C3%A9veloppement-102062019180186" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></a></li>
+                        <li><a href="https://www.linkedin.com/company/westcode-developpement" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a></li>
+                        <li><a href="mailto:anthony.matvienko@westcode-dev.fr"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></a></li>
+                    </ul>
+                </nav>
+                <span id="burger-button" class="burger-button-visible">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="30px" height="30px" viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                    <path d="M296 2057 c-109 -61 -106 -221 5 -277 37 -19 63 -20 979 -20 916 0 942 1 979 20 113 57 113 223 0 280 -37 19 -63 20 -981 20 l-943 0 -39 -23z"/>
+                    <path d="M296 1417 c-109 -61 -106 -221 5 -277 37 -19 63 -20 979 -20 916 0 942 1 979 20 113 57 113 223 0 280 -37 19 -63 20 -981 20 l-943 0 -39 -23z"/>
+                    <path d="M296 777 c-109 -61 -106 -221 5 -277 37 -19 63 -20 979 -20 916 0 942 1 979 20 113 57 113 223 0 280 -37 19 -63 20 -981 20 l-943 0 -39 -23z"/>
+                    </g>
+                    </svg>
+                </span>
+                <span id="burger-cross" class="burger-cross-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="25px" height="25px" viewBox="0 0 256.000000 256.000000">
+                    <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                    <path d="M63 2540 c-54 -33 -78 -102 -52 -153 6 -12 255 -266 553 -564 l541 -543 -541 -542 c-298 -299 -547 -553 -553 -565 -47 -93 69 -209 162 -162 12 6 266 255 565 553 l542 541 543 -541 c298 -298 552 -547 564 -553 93 -47 209 69 162 162 -6 12 -255 266 -553 564 l-541 543 541 543 c298 298 547 552 553 564 47 93 -69 209 -162 162 -12 -6 -266 -255 -564 -553 l-543 -541 -542 541 c-299 298 -553 547 -565 553 -33 16 -74 13 -110 -9z"/>
+                    </g>
+                    </svg>
+                </span>
+            </div>
+            <nav id="nav-menu-burger" class="nav-menu-burger-hidden">
+                <ul id="main-menu-burger">
+                    <li><a data-link="index.html" class="links" aria-label="Aller vers l'accueil">Accueil</a></li>
+                    <li><a data-link="services.html" class="links" aria-label="Aller vers la page services">Services</a></li>
+                    <li><a data-link="portfolio.html" class="links link-menu-portfolio" aria-label="Aller vers la page réalisations">Réalisations</a></li>
+                    <li><a data-link="contact.html" class="links" aria-label="Aller vers la page de contact">Contact</a></li>
+                </ul>
+                <ul id="social-menu-burger">
+                    <li><a href="https://www.facebook.com/Westcode-d%C3%A9veloppement-102062019180186" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></a></li>
+                    <li><a href="https://www.linkedin.com/company/westcode-developpement" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a></li>
+                    <li><a href="mailto:anthony.matvienko@westcode-dev.fr"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="transition transition-off">
+            <img src="assets/images/logo.webp" alt="Logo de Westcode Développement" class="logo-transition">
+        </div>
+        <div id="background">
+            <img src="assets/images/keyboard/6.jpg" alt="Photo de touches de clavier en gros plan" id="background-img-customer">
+            <div id="main-prez">
+                <div id="title">
+                    <h1 id="title-site">My Laser</h1>
+                    <p id="text-site">Découpe Métal au Laser<br> à Sainte Luce / Loire (44)</p>
+                    <a href="" target="_blank"><input type="button" value="Visitez le Site" id="button-site"></a>
+                </div>
+                <div id="img-prez">
+                    <img src="./assets/images/sites/mylaser-6.jpeg" alt="Photo d'un laser en pleine découpe" id="sample">
+                </div>
+            </div>
+        </div>
+        <div class="shadow-img"></div>
+        <section id="services-bloc">
+            <article id="services-box">
+                <div class="services service-1">
+                    <span class="services-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"/><circle cx="7" cy="22" r="2"/><circle cx="17" cy="22" r="2"/></svg>
+                    </span>
+                    <span class="services-text">
+                        <h3>Site Web E-commerce</h3>
+                    </span>
+                </div>
+                <div class="services service-2">
+                    <span class="services-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="40" height="40" viewBox="0 0 64 64">
+                        <g transform="translate(0.000000,64.000000) scale(0.100000,-0.100000)">
+                        <path d="M120 450 c0 -143 -1 -150 -20 -150 -19 0 -20 -7 -20 -90 0 -83 1 -90 20 -90 17 0 20 -7 20 -40 l0 -40 200 0 200 0 0 40 c0 33 3 40 20 40 19 0 20 7 20 90 0 83 -1 90 -20 90 -19 0 -20 7 -20 98 l0 98 -53 52 -53 52 -147 0 -147 0 0 -150z m280 80 l0 -50 50 0 50 0 0 -90 0 -90 -180 0 -180 0 0 140 0 140 130 0 130 0 0 -50z m55 0 l29 -30 -32 0 c-29 0 -32 3 -32 30 0 17 1 30 3 30 2 0 16 -13 32 -30z m85 -320 l0 -70 -220 0 -220 0 0 70 0 70 220 0 220 0 0 -70z m-40 -120 l0 -30 -180 0 -180 0 0 30 0 30 180 0 180 0 0 -30z"/>
+                        <path d="M180 430 c0 -6 53 -10 140 -10 87 0 140 4 140 10 0 6 -53 10 -140 10 -87 0 -140 -4 -140 -10z"/>
+                        <path d="M180 370 c0 -6 53 -10 140 -10 87 0 140 4 140 10 0 6 -53 10 -140 10 -87 0 -140 -4 -140 -10z"/>
+                        <path d="M184 246 c-3 -8 -4 -29 -2 -48 3 -29 7 -33 36 -36 32 -3 55 19 37 36 -4 4 -10 1 -12 -5 -3 -7 -13 -13 -24 -13 -14 0 -19 7 -19 30 0 23 5 30 19 30 11 0 21 -6 24 -12 2 -7 8 -10 12 -6 4 4 5 14 2 23 -8 19 -66 20 -73 1z"/>
+                        <path d="M295 214 c-9 -25 -14 -48 -10 -52 4 -4 10 -1 12 6 3 6 13 12 23 12 10 0 20 -6 23 -12 2 -7 8 -10 12 -6 8 8 -24 98 -35 98 -4 0 -15 -21 -25 -46z"/>
+                        <path d="M380 210 l0 -51 38 3 c37 3 37 3 37 48 0 45 0 45 -37 48 l-38 3 0 -51z m60 0 c0 -23 -4 -30 -20 -30 -16 0 -20 7 -20 30 0 23 4 30 20 30 16 0 20 -7 20 -30z"/>
+                        </g>
+                        </svg>
+                    </span>
+                    <span class="services-text">
+                        <h3>Configurateur Pièces Métalliques</h3>
+                    </span>
+                </div>
+                <div class="services service-3">
+                    <span class="services-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="40" height="40" viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                        <path d="M410 2551 c-76 -23 -157 -98 -181 -167 -21 -58 -21 -2150 0 -2208 17 -49 82 -121 136 -149 l40 -22 875 0 875 0 40 22 c52 28 109 88 132 138 17 37 18 96 21 880 l3 839 -338 338 -338 338 -620 -1 c-341 0 -631 -4 -645 -8z m1191 -313 c0 -137 5 -224 12 -245 22 -60 72 -117 128 -148 l54 -30 223 -3 222 -3 -2 -799 c-3 -792 -3 -799 -24 -827 -11 -15 -36 -38 -54 -50 l-33 -23 -847 0 -847 0 -33 23 c-18 12 -43 35 -54 50 -21 28 -21 28 -21 1097 0 1069 0 1069 21 1097 11 15 36 38 54 51 l33 22 583 0 584 0 1 -212z m422 -316 c-172 -4 -215 2 -254 36 -52 43 -59 73 -59 254 l0 163 225 -225 225 -225 -137 -3z"/>
+                        <path d="M1153 1750 c-37 -15 -60 -64 -66 -141 -7 -79 -11 -86 -61 -113 l-35 -19 -74 33 c-124 54 -148 41 -238 -126 -40 -74 -42 -84 -34 -120 8 -30 24 -50 78 -92 l67 -55 0 -52 0 -53 -64 -48 c-105 -77 -108 -112 -23 -259 47 -79 58 -92 94 -104 39 -14 43 -13 117 22 l76 36 44 -27 c44 -26 45 -28 51 -92 14 -146 42 -170 195 -170 153 0 181 24 195 170 6 64 7 66 51 92 l44 27 76 -36 c74 -35 78 -36 117 -22 36 12 47 25 94 104 85 147 82 182 -23 259 l-64 48 0 53 0 52 68 55 c53 42 69 62 77 92 8 36 6 46 -34 120 -90 167 -114 180 -238 126 l-74 -33 -35 19 c-50 27 -54 34 -61 113 -7 79 -30 126 -69 141 -32 12 -221 12 -251 0z m212 -147 c18 -151 15 -144 71 -173 28 -14 63 -36 79 -48 37 -29 46 -28 137 15 43 20 80 34 81 32 2 -2 21 -35 42 -74 l38 -69 -28 -21 c-15 -11 -49 -37 -75 -57 l-47 -36 2 -104 c1 -57 3 -106 4 -110 0 -3 33 -29 71 -57 39 -28 70 -54 70 -57 0 -4 -65 -127 -75 -142 -1 -1 -35 13 -76 33 -40 19 -83 35 -95 35 -12 0 -44 -15 -72 -32 -27 -18 -63 -40 -79 -49 -31 -17 -42 -51 -43 -129 -1 -77 -4 -80 -90 -80 l-78 0 -6 37 c-3 21 -8 64 -11 96 -6 52 -10 61 -37 75 -17 10 -53 32 -80 50 -28 17 -58 32 -68 32 -11 0 -53 -15 -94 -34 l-76 -35 -40 69 c-22 38 -40 71 -40 74 0 3 28 26 63 52 34 26 66 51 72 56 5 5 10 56 11 114 l2 106 -57 43 c-31 25 -65 50 -75 58 -18 13 -18 17 20 85 21 40 41 72 45 72 4 0 40 -16 80 -35 86 -41 97 -42 134 -13 16 12 51 34 79 48 56 29 63 43 65 137 2 82 2 83 91 83 l79 0 6 -47z"/>
+                        <path d="M1159 1302 c-158 -82 -193 -289 -71 -415 60 -62 105 -82 192 -82 87 0 132 20 192 82 66 68 89 158 64 247 -36 121 -133 196 -256 196 -55 0 -78 -5 -121 -28z m209 -104 c129 -79 66 -288 -88 -288 -116 0 -194 124 -142 227 45 87 145 113 230 61z"/>
+                        </g>
+                        </svg>
+                    </span>
+                    <span class="services-text">
+                        <h3>Back-Office Admin</h3>
+                    </span>
+                </div>
+                <div class="services service-4">
+                    <span class="services-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="40" height="40" viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                        <path d="M1346 2545 c-31 -11 -176 -150 -674 -647 -348 -348 -640 -646 -648 -661 -22 -41 -28 -118 -14 -163 10 -30 62 -89 216 -245 l204 -206 0 -232 c0 -255 4 -273 67 -333 63 -61 19 -58 989 -58 673 0 897 3 928 12 53 16 118 81 134 134 16 56 17 1140 1 1199 -16 56 -83 121 -142 136 -36 10 -44 16 -38 28 17 33 21 91 10 138 -11 45 -36 73 -423 462 -275 276 -424 419 -451 432 -47 22 -105 23 -159 4z m143 -92 c21 -18 16 -24 -673 -711 -690 -689 -694 -693 -710 -671 -10 14 -16 44 -16 74 l0 50 638 637 637 638 51 0 c35 0 59 -6 73 -17z m143 -140 l58 -58 -382 -382 -383 -383 -120 0 -120 0 440 440 c242 242 442 440 445 440 2 0 30 -26 62 -57z m385 -385 c143 -145 266 -273 272 -285 17 -33 13 -84 -9 -120 l-20 -33 -607 0 -608 0 350 350 c192 193 352 350 355 350 3 0 123 -118 267 -262z m377 -532 c18 -7 42 -26 54 -41 22 -28 22 -28 22 -602 0 -493 -2 -578 -15 -603 -32 -63 13 -60 -968 -60 l-894 0 -28 22 c-55 43 -55 40 -55 640 0 517 1 556 18 587 10 19 34 43 53 53 32 17 80 18 907 18 719 0 878 -2 906 -14z m-2026 -463 l-63 -63 -60 60 -60 60 120 120 120 120 3 -117 3 -117 -63 -63z m62 -125 l0 -63 -32 32 -32 33 29 30 c16 16 30 30 32 30 2 0 3 -28 3 -62z"/>
+                        <path d="M625 1255 c-24 -23 -25 -30 -25 -145 0 -115 1 -122 25 -145 24 -24 27 -25 185 -25 158 0 161 1 185 25 24 23 25 30 25 145 0 115 -1 122 -25 145 -24 24 -27 25 -185 25 -158 0 -161 -1 -185 -25z m315 -150 l0 -86 -127 3 -128 3 -3 83 -3 82 131 0 130 0 0 -85z"/>
+                        <path d="M607 844 c-4 -4 -7 -38 -7 -75 0 -58 3 -70 20 -79 14 -8 26 -8 40 0 19 10 21 19 18 83 l-3 72 -30 3 c-17 2 -34 0 -38 -4z"/>
+                        <path d="M782 838 c-7 -7 -12 -38 -12 -75 0 -52 3 -64 20 -73 14 -8 26 -8 40 0 19 10 21 19 18 83 -3 68 -4 72 -28 75 -14 2 -31 -3 -38 -10z"/>
+                        <path d="M952 838 c-7 -7 -12 -38 -12 -75 0 -52 3 -64 20 -73 14 -8 26 -8 40 0 19 10 21 19 18 83 -3 68 -4 72 -28 75 -14 2 -31 -3 -38 -10z"/>
+                        <path d="M1122 838 c-7 -7 -12 -38 -12 -75 0 -52 3 -64 20 -73 14 -8 26 -8 40 0 19 10 21 19 18 83 -3 68 -4 72 -28 75 -14 2 -31 -3 -38 -10z"/>
+                        <path d="M1292 838 c-18 -18 -15 -123 4 -142 21 -22 40 -20 58 6 18 25 21 84 6 122 -10 28 -47 35 -68 14z"/>
+                        <path d="M1632 838 c-18 -18 -15 -123 4 -142 20 -21 37 -20 57 2 19 21 23 102 7 133 -12 21 -50 25 -68 7z"/>
+                        <path d="M1802 838 c-18 -18 -15 -123 4 -142 37 -38 74 -5 74 65 0 28 -5 59 -10 70 -12 21 -50 25 -68 7z"/>
+                        <path d="M1970 831 c-5 -11 -10 -42 -10 -70 0 -70 37 -103 74 -65 19 19 22 124 4 142 -18 18 -56 14 -68 -7z"/>
+                        <path d="M2140 831 c-17 -33 -12 -116 8 -134 23 -21 36 -21 56 -1 19 19 22 124 4 142 -18 18 -56 14 -68 -7z"/>
+                        <path d="M618 589 c-21 -12 -24 -49 -6 -67 16 -16 210 -16 226 0 7 7 12 21 12 33 0 12 -5 26 -12 33 -15 15 -195 16 -220 1z"/>
+                        <path d="M958 589 c-24 -13 -23 -56 1 -69 28 -14 204 -13 219 2 7 7 12 21 12 33 0 12 -5 26 -12 33 -15 15 -195 16 -220 1z"/>
+                        <path d="M1298 589 c-24 -14 -23 -56 2 -69 11 -6 61 -10 116 -8 84 3 98 6 110 23 12 18 11 24 -2 43 -14 20 -23 22 -112 22 -53 0 -105 -5 -114 -11z"/>
+                        <path d="M618 419 c-21 -12 -24 -49 -6 -67 16 -16 210 -16 226 0 18 18 14 56 -7 68 -25 13 -191 13 -213 -1z"/>
+                        <path d="M958 419 c-21 -12 -24 -49 -6 -67 16 -16 210 -16 226 0 18 18 14 56 -7 68 -25 13 -191 13 -213 -1z"/>
+                        </g>
+                        </svg>
+                    </span>
+                    <span class="services-text">
+                        <h3>Paiement en ligne sécurisé</h3>
+                    </span>
+                </div>
+            </article>
+        </section>
+        <article id="customer-prez-box">
+            <div id="customer-prez-bloc" class="reveal">
+                <h2>My Laser by DT Systèmes</h2>
+                <p>MyLaser.com est un <strong>site e-commerce</strong> de découpe métal complet!<br>
+                <strong>Configurateur de fichier .dxf</strong>, les visiteurs obtiennent un devis en ligne instantanément après avoir déposé leur fichier sur le site.<br>
+                Un choix de métal et de dimensions est proposé et le prix s'actualise automatiquement. Les clients ont accès à leur panier, à un compte client et peuvent gérer leurs commandes passées.<br>
+                Un large choix de moyens de transport est proposé et le système de paiement est sécurisé et automatisé.<br>
+                Un back office est disponible pour le propriétaire afin de gérer les commandes, factures et fichiers .dxf reçus.<br>
+                Une belle boutique pour un professionnel de la découpe laser reconnu!</p>
+            </div>
+        </article>
+        <aside id="swiper-4-bloc">
+            <div class="swiper swiper-4 reveal">
+                <div class="swiper-wrapper swiper-wrapper-4">
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/mylaser-1.PNG" alt="Image de la page d'accueil du site de My Laser">
+                    </div>
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/mylaser-2.PNG" alt="Image d'une page du site de My Laser">
+                    </div>
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/mylaser-3.PNG" alt="Image d'une page du site de My Laser">
+                    </div>
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/mylaser-4.PNG" alt="Image d'une page du site de My Laser">
+                    </div>
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/mylaser-5.PNG" alt="Image d'une page du site de My Laser">
+                    </div>
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/mylaser-mobile.png" alt="Image d'une page du site de My Laser sur appareil mobile">
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-prev-4"></div>
+                <div class="swiper-button-next swiper-button-next-4"></div>
+            </div>
+        </aside>
+        <article id="second-prez" class="second-prez-services">
+            <div id="second-prez-text-bloc" class="reveal">
+                <p>Un coup de coeur? Un projet qui vous donne des idées? Notre travail vous plait?</p>
+                <a href="contact.html"><input type="button" value="Parlons en!" id="contact-button"></a>
+            </div>
+        </article>
+        <aside id='banner-cookies' class="hidden-consent">
+            <p id='banner-txt'>En poursuivant votre navigation, sans changer les paramètres de votre navigateur, vous acceptez l'utilisation de cookies pour garantir une bonne expérience sur notre site.</p>
+            <span id="cookies-buttons-box">
+                <input type='button' value='Accepter' id='banner-button-accept'>
+                <input type='button' value='Refuser' id='banner-button-decline'>
+                <input type='button' value='Préférences' id='banner-button-pref'>
+            </span>
+        </aside>
+        <aside id="cookies-preferences" class="hidden-consent">
+            <h2>Gérer le consentement aux Cookies</h2>
+            <span id="checkbox-box">
+                <input type="checkbox" name="consent-stat" id="checkbox-stat">
+                <label for="checkbox-stat">Utilisation de Statistiques (Google Analytics)</label>
+            </span>
+            <p>Le stockage ou l’accès technique qui est utilisé exclusivement à des fins statistiques.</p>
+            <input type="button" value="Appliquer" id="validate-pref">
+        </aside>
+        <footer>
+            <div id="bloc-footer">
+                <div id="links-footer">
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li>&copy; 2022 Westcode Développement</li>
+                    </ul>
+                </div>
+                <div id="social-footer">
+                    <ul>
+                        <li><a href="https://www.facebook.com/Westcode-d%C3%A9veloppement-102062019180186" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></a></li>
+                        <li><a href="https://www.linkedin.com/company/westcode-developpement" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a></li>
+                        <li><a href="mailto:anthony.matvienko@westcode-dev.fr"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/cookies.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="assets/js/sites.js"></script>
+        <script src="assets/js/burger-menu.js"></script>
+        <script src="assets/js/animations-sites.js"></script>
+    </body>
+</html>

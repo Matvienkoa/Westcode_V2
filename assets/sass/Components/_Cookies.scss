@@ -1,0 +1,133 @@
+.hidden-consent {
+    visibility: hidden;
+}
+
+.visible-consent {
+    visibility: visible;
+}
+
+#banner-cookies{
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+    width: 100%;
+    color: rgb(36, 36, 36);
+    background-color: #ffe1add3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0px;
+    #banner-txt{
+        margin: 0;
+        margin-right: 30px;
+        margin-left: 10px;
+        @include Font-Title-h1-4;
+        font-weight: 400;
+        font-size: 1.05em;
+    }
+    #cookies-buttons-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input{
+            border: none;
+            border-bottom: solid 2px #ffe1ad;
+            background-color: rgba(0, 0, 0, 0.473);
+            color: white;
+            font-size: 0.9em;
+            padding: 10px 10px;
+            cursor: pointer;
+            transition: background-color 600ms, color 400ms;
+            @include Font-p-1;
+            margin-right: 10px;
+            &:hover {
+                color: black;
+                background-color: #ffe1ad;
+            }
+        }
+    }
+}
+
+#cookies-preferences{
+    position: fixed;
+    width: 320px;
+    bottom: 0;
+    left: 3%;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(36, 36, 36);
+    background-color: #ffe1add3;
+    padding: 15px 0px;
+    border-radius: 20px 20px 0 0;
+    @include Font-Title-h1-4;
+    h2{
+        margin: 0;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 90%;
+    }
+    #checkbox-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        input[type=checkbox] {
+            height: 20px;
+            width: 20px;
+        }
+        label{
+            font-size: 1.1em;
+        }
+    }
+    p{
+        margin: 0;
+        margin-top: 10px;
+        margin-bottom: 15px;
+        text-align: center;
+        width: 90%;
+    }
+    #validate-pref{
+        border: none;
+        border-bottom: solid 2px #ffe1ad;
+        background-color: rgba(0, 0, 0, 0.473);
+        color: white;
+        font-size: 0.9em;
+        padding: 10px 10px;
+        cursor: pointer;
+        transition: background-color 600ms, color 400ms;
+        margin-right: 10px;
+        &:hover {
+            color: black;
+            background-color: #ffe1ad;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #banner-cookies{
+        flex-direction: column;
+        #banner-txt{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+    }
+}
+@media (max-width: 450px) {
+    #banner-cookies {
+        #cookies-buttons-box{
+            input{
+                margin: 0 6px;
+                font-size: 0.8em;
+            }
+        }
+    }
+    #cookies-preferences{
+        width: 94%;
+        left: 3%;
+        margin: auto;
+        #validate-pref{
+            font-size: 0.8em;
+        }
+    }
+}

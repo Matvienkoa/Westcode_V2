@@ -1,8 +1,14 @@
 @import './Utils/Variables';
 @import './Utils/Mixin';
+@import './Utils/Animations';
 @import './Layout/Header';
+@import './Layout/Footer';
+@import './Layout/Transistion';
+@import './Components/Lists';
+@import './Components/Cookies';
 @import './Pages/Index';
 @import './Pages/Portfolio';
 @import './Pages/Services';
 @import './Pages/Sites';
 @import './Pages/Contact';
+@import './Pages/Mentions-legales';

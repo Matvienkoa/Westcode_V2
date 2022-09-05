@@ -26,3 +26,27 @@ arrowButtons.forEach(button => {
     })
   })
 })
+
+// Swipers
+var swiper = new Swiper(".swiper-4", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  speed: 900,
+  coverflowEffect: {
+    rotate: 5,
+    stretch: 0,
+    depth: 100,
+    modifier: 1,
+    slideShadows: false,
+    scale: 0.8,
+    
+  },
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

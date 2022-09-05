@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="L'application web Hourglasses Harry Potter permet au professeur d'ajouter ou retirer des points aux 4 maisons! La compétition est lancée!">
+        <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="favicon.ico">
+        <link rel="stylesheet" href="assets/css/style.css" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hourglasses HP - Application Web</title>
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@500&family=Bebas+Neue&family=Chakra+Petch:wght@700&family=Fjalla+One&family=Kanit:wght@600&family=Lato:wght@300&family=Squada+One&family=Teko:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header">
+            <div id="bloc-head">
+                <picture>
+                    <img src="assets/images/logo.webp" alt="Logo de Westcode Développement" id="logo">
+                </picture>
+                <nav id="nav-menu">
+                    <ul id="main-menu">
+                        <li><a data-link="index.html" class="links" aria-label="Aller vers l'accueil">Accueil</a></li>
+                        <li><a data-link="services.html" class="links" aria-label="Aller vers la page services">Services</a></li>
+                        <li><a data-link="portfolio.html" class="links link-menu-portfolio" aria-label="Aller vers la page réalisations">Réalisations</a></li>
+                        <li><a data-link="contact.html" class="links" aria-label="Aller vers la page de contact">Contact</a></li>
+                    </ul>
+                    <ul id="social-menu">
+                        <li><a href="https://www.facebook.com/Westcode-d%C3%A9veloppement-102062019180186" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></a></li>
+                        <li><a href="https://www.linkedin.com/company/westcode-developpement" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a></li>
+                        <li><a href="mailto:anthony.matvienko@westcode-dev.fr"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></a></li>
+                    </ul>
+                </nav>
+                <span id="burger-button" class="burger-button-visible">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="30px" height="30px" viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                    <path d="M296 2057 c-109 -61 -106 -221 5 -277 37 -19 63 -20 979 -20 916 0 942 1 979 20 113 57 113 223 0 280 -37 19 -63 20 -981 20 l-943 0 -39 -23z"/>
+                    <path d="M296 1417 c-109 -61 -106 -221 5 -277 37 -19 63 -20 979 -20 916 0 942 1 979 20 113 57 113 223 0 280 -37 19 -63 20 -981 20 l-943 0 -39 -23z"/>
+                    <path d="M296 777 c-109 -61 -106 -221 5 -277 37 -19 63 -20 979 -20 916 0 942 1 979 20 113 57 113 223 0 280 -37 19 -63 20 -981 20 l-943 0 -39 -23z"/>
+                    </g>
+                    </svg>
+                </span>
+                <span id="burger-cross" class="burger-cross-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="25px" height="25px" viewBox="0 0 256.000000 256.000000">
+                    <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                    <path d="M63 2540 c-54 -33 -78 -102 -52 -153 6 -12 255 -266 553 -564 l541 -543 -541 -542 c-298 -299 -547 -553 -553 -565 -47 -93 69 -209 162 -162 12 6 266 255 565 553 l542 541 543 -541 c298 -298 552 -547 564 -553 93 -47 209 69 162 162 -6 12 -255 266 -553 564 l-541 543 541 543 c298 298 547 552 553 564 47 93 -69 209 -162 162 -12 -6 -266 -255 -564 -553 l-543 -541 -542 541 c-299 298 -553 547 -565 553 -33 16 -74 13 -110 -9z"/>
+                    </g>
+                    </svg>
+                </span>
+            </div>
+            <nav id="nav-menu-burger" class="nav-menu-burger-hidden">
+                <ul id="main-menu-burger">
+                    <li><a data-link="index.html" class="links" aria-label="Aller vers l'accueil">Accueil</a></li>
+                    <li><a data-link="services.html" class="links" aria-label="Aller vers la page services">Services</a></li>
+                    <li><a data-link="portfolio.html" class="links link-menu-portfolio" aria-label="Aller vers la page réalisations">Réalisations</a></li>
+                    <li><a data-link="contact.html" class="links" aria-label="Aller vers la page de contact">Contact</a></li>
+                </ul>
+                <ul id="social-menu-burger">
+                    <li><a href="https://www.facebook.com/Westcode-d%C3%A9veloppement-102062019180186" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></a></li>
+                    <li><a href="https://www.linkedin.com/company/westcode-developpement" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a></li>
+                    <li><a href="mailto:anthony.matvienko@westcode-dev.fr"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="transition transition-off">
+            <img src="assets/images/logo.webp" alt="Logo de Westcode Développement" class="logo-transition">
+        </div>
+        <div id="background">
+            <img src="assets/images/keyboard/6.jpg" alt="Photo de touches de clavier en gros plan" id="background-img-customer">
+            <div id="main-prez">
+                <div id="title">
+                    <h1 id="title-site">Hourglasses Harry Potter</h1>
+                    <p id="text-site">Application Ludique<br> Comptage de points Maisons Harry Potter</p>
+                </div>
+                <div id="img-prez">
+                    <img src="./assets/images/sites/hp-1.jpg" alt="Photo des cravates des différentes maison dans Harry Potter" id="sample">
+                </div>
+            </div>
+        </div>
+        <div class="shadow-img"></div>
+        <section id="services-bloc">
+            <article id="services-box">
+                <div class="services service-1">
+                    <span class="services-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="40" height="40" viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                        <path d="M117 2506 c-47 -17 -81 -47 -101 -91 -14 -29 -16 -134 -16 -877 l0 -844 22 -44 c28 -54 62 -80 119 -91 24 -4 232 -8 462 -9 l417 0 0 -23 c0 -46 -31 -128 -63 -164 -43 -49 -82 -63 -173 -63 -50 0 -88 -6 -111 -17 -68 -32 -93 -114 -53 -178 41 -66 26 -65 660 -65 634 0 619 -1 660 65 40 64 15 146 -53 178 -23 11 -61 17 -111 17 -91 0 -130 14 -173 63 -32 36 -63 118 -63 164 l0 23 418 0 c229 1 437 5 461 9 57 11 91 37 119 92 l22 44 -2 856 -3 856 -28 36 c-59 78 43 72 -1232 74 -948 2 -1146 0 -1178 -11z m2328 -101 l25 -24 0 -701 0 -700 -40 0 -40 0 0 669 0 670 -22 15 c-20 14 -140 16 -1088 16 -948 0 -1068 -2 -1088 -16 l-22 -15 0 -670 0 -669 -40 0 -40 0 0 700 0 701 25 24 24 25 1141 0 1141 0 24 -25z m-145 -785 l0 -640 -1020 0 -1020 0 0 640 0 640 1020 0 1020 0 0 -640z m170 -824 c0 -111 -3 -122 -41 -141 -42 -22 -2256 -22 -2298 0 -38 19 -41 30 -41 141 l0 94 1190 0 1190 0 0 -94z m-1016 -268 c21 -111 31 -141 56 -182 l30 -46 -260 0 -260 0 30 46 c25 41 35 71 56 182 4 22 6 22 174 22 168 0 170 0 174 -22z m416 -338 c8 -14 8 -26 0 -40 -11 -20 -21 -20 -590 -20 -569 0 -579 0 -590 20 -8 14 -8 26 0 40 11 20 21 20 590 20 569 0 579 0 590 -20z"/>
+                        <path d="M566 2158 c-14 -19 -16 -77 -16 -429 0 -373 1 -409 18 -428 17 -21 21 -21 515 -24 l499 -2 23 -74 c33 -103 51 -112 113 -56 l39 34 53 -54 c30 -31 63 -55 74 -55 24 0 166 137 166 159 0 9 -26 41 -57 73 l-57 58 33 34 c24 25 32 41 29 62 -3 25 -10 30 -83 54 l-80 25 0 306 c0 244 -3 309 -14 322 -12 16 -67 17 -627 17 l-613 0 -15 -22z m1184 -133 l0 -65 -555 0 -555 0 0 65 0 65 555 0 555 0 0 -65z m0 -304 l0 -160 -47 14 c-27 8 -70 21 -98 30 -112 34 -128 14 -90 -113 14 -48 28 -95 31 -104 5 -17 -21 -18 -450 -18 l-456 0 0 255 0 255 555 0 555 0 0 -159z m-2 -251 c59 -17 113 -33 121 -36 11 -3 9 -10 -8 -27 -33 -36 -26 -63 31 -123 l51 -54 -28 -30 -29 -30 -56 55 c-61 60 -82 66 -117 33 -13 -12 -25 -20 -27 -17 -6 6 -76 246 -76 260 0 6 7 9 15 5 9 -3 64 -19 123 -36z"/>
+                        <path d="M748 1699 c-15 -9 -18 -26 -18 -117 0 -71 4 -112 12 -120 17 -17 379 -17 396 0 8 8 12 49 12 120 0 96 -2 108 -19 118 -26 13 -360 13 -383 -1z m322 -119 l0 -40 -130 0 -130 0 0 40 0 40 130 0 130 0 0 -40z"/>
+                        <path d="M1122 798 c-6 -6 -12 -20 -12 -29 0 -35 23 -40 175 -37 128 3 149 5 159 21 8 12 8 22 0 35 -10 15 -31 17 -160 20 -108 2 -153 -1 -162 -10z"/>
+                        </g>
+                        </svg>
+                    </span>
+                    <span class="services-text">
+                        <h3>Application Web</h3>
+                    </span>
+                </div>
+                <div class="services service-2">
+                    <span class="services-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="40" height="40" viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                        <path d="M940 2446 c-393 -121 -686 -405 -816 -791 -14 -44 -27 -102 -28 -130 -1 -43 2 -50 19 -50 14 0 22 10 28 35 65 257 154 419 321 586 165 165 335 258 586 321 25 6 35 14 35 28 0 29 -54 29 -145 1z"/>
+                        <path d="M1474 2457 c-9 -25 2 -35 57 -46 210 -45 402 -152 565 -315 144 -144 245 -313 294 -491 12 -44 26 -91 29 -105 5 -15 15 -25 27 -25 28 0 24 70 -11 179 -116 362 -412 659 -779 781 -104 35 -173 43 -182 22z"/>
+                        <path d="M941 1901 c-8 -13 -11 -211 -11 -623 0 -497 2 -608 14 -623 16 -23 -17 -42 571 333 301 193 421 275 423 289 3 17 -78 72 -475 326 -263 168 -486 309 -495 312 -11 4 -20 0 -27 -14z m494 -346 c233 -149 424 -272 424 -275 1 -5 -839 -542 -858 -548 -8 -3 -11 141 -11 548 0 373 3 551 10 548 6 -2 201 -125 435 -273z"/>
+                        <path d="M93 1074 c-16 -42 52 -253 123 -381 86 -152 221 -303 365 -405 139 -99 352 -189 454 -192 43 -1 50 2 50 19 0 14 -10 22 -35 28 -251 63 -421 156 -586 321 -144 144 -245 313 -294 491 -12 44 -26 91 -29 105 -9 30 -38 39 -48 14z"/>
+                        <path d="M2420 1065 c-5 -14 -10 -32 -10 -40 0 -26 -59 -195 -91 -257 -55 -109 -129 -210 -223 -304 -144 -144 -313 -245 -491 -294 -44 -12 -91 -26 -105 -29 -15 -5 -25 -15 -25 -27 0 -46 186 -2 353 83 230 117 428 317 540 544 83 169 122 338 80 347 -12 2 -21 -6 -28 -23z"/>
+                        </g>
+                        </svg>
+                    </span>
+                    <span class="services-text">
+                        <h3>Animations</h3>
+                    </span>
+                </div>
+                <div class="services service-3">
+                    <span class="services-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="40" height="40" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
+                        <path d="M2010 5110 c-393 -55 -724 -226 -974 -502 -288 -319 -416 -665 -416 -1127 l0 -158 -83 -5 c-136 -9 -227 -70 -284 -193 l-28 -60 -3 -351 c-3 -342 -2 -351 18 -377 43 -55 130 -43 162 23 16 31 18 70 18 343 0 289 1 310 20 347 39 76 -113 70 1764 68 1668 -3 1684 -3 1706 -23 13 -11 31 -38 41 -60 17 -37 19 -78 19 -586 l0 -546 -302 -163 c-366 -197 -379 -206 -409 -267 -20 -41 -23 -61 -22 -162 2 -199 62 -429 162 -630 28 -55 51 -103 51 -106 0 -9 -2928 -5 -2953 4 -14 5 -35 25 -48 43 l-24 33 -5 441 c-5 464 -4 454 -50 491 -8 7 -33 13 -56 13 -31 0 -46 -6 -68 -28 l-27 -29 3 -464 3 -464 30 -58 c39 -78 120 -152 187 -172 45 -13 243 -15 1598 -15 l1545 0 61 -73 c134 -160 329 -297 425 -297 86 0 285 137 412 285 173 200 310 462 379 724 25 96 31 142 35 268 5 142 4 154 -17 197 -13 29 -38 57 -63 75 -23 15 -178 101 -344 191 l-302 162 -3 577 -3 577 -38 77 c-62 125 -160 187 -297 187 l-57 0 -7 193 c-7 202 -22 323 -56 447 -161 575 -636 1016 -1217 1130 -123 24 -377 35 -483 20z m450 -219 c132 -26 206 -52 345 -121 393 -195 670 -571 741 -1009 8 -50 14 -160 14 -263 l0 -178 -133 0 -134 0 -6 178 c-8 245 -35 371 -119 537 -54 108 -118 195 -208 285 -330 331 -827 413 -1245 205 -130 -64 -215 -127 -312 -228 -129 -136 -222 -302 -269 -482 -23 -87 -27 -126 -31 -297 l-5 -198 -141 0 -140 0 6 203 c4 150 11 228 27 302 95 447 401 815 822 989 102 42 253 83 358 96 106 13 318 3 430 -19z m-48 -480 c320 -83 570 -338 648 -664 16 -65 20 -117 20 -254 l0 -173 -891 0 -891 0 5 183 c5 193 16 257 64 375 114 286 363 488 676 548 95 18 268 11 369 -15z m1976 -2854 l312 -169 0 -78 c0 -225 -97 -504 -261 -750 -74 -112 -252 -294 -321 -330 l-48 -25 -47 25 c-68 35 -257 228 -324 330 -163 247 -264 544 -257 749 l3 82 310 168 c171 93 313 168 316 167 3 0 146 -77 317 -169z"/>
+                        <path d="M4324 1245 c-16 -7 -96 -81 -178 -164 l-150 -150 -57 54 c-31 30 -68 57 -83 61 -74 18 -140 -48 -122 -122 7 -26 176 -197 220 -221 11 -7 36 -12 55 -13 38 0 89 46 315 284 127 134 131 140 131 182 0 71 -67 117 -131 89z"/>
+                        <path d="M1358 2734 c-229 -55 -388 -256 -389 -489 0 -44 5 -102 11 -129 15 -70 73 -175 125 -230 l44 -45 -69 -46 c-197 -131 -331 -367 -333 -585 0 -47 5 -88 15 -111 24 -55 78 -110 133 -135 l50 -24 536 0 535 0 52 26 c59 29 96 69 125 133 16 37 19 59 14 135 -12 219 -128 419 -319 553 l-78 55 49 54 c85 93 131 211 131 339 0 332 -311 577 -632 499z m256 -218 c230 -112 232 -438 5 -554 -56 -29 -76 -34 -137 -34 -175 0 -312 133 -312 303 0 87 22 148 77 209 98 109 240 138 367 76z m-19 -810 c218 -58 414 -290 415 -490 0 -80 29 -76 -527 -76 -322 0 -501 4 -514 10 -38 21 -19 161 36 271 66 129 225 256 361 288 59 14 173 12 229 -3z"/>
+                        <path d="M2394 2440 c-60 -24 -73 -112 -25 -161 l29 -29 476 0 c510 0 515 0 542 51 27 52 8 115 -41 137 -31 14 -946 16 -981 2z"/>
+                        <path d="M251 2024 c-26 -22 -31 -33 -31 -70 0 -99 115 -139 174 -61 31 42 27 94 -12 128 -42 38 -89 39 -131 3z"/>
+                        <path d="M2369 1881 c-38 -39 -40 -97 -5 -138 l24 -28 357 0 357 0 24 28 c35 41 33 99 -5 138 l-29 29 -347 0 -347 0 -29 -29z"/>
+                        </g>
+                        </svg>
+                    </span>
+                    <span class="services-text">
+                        <h3>Connexion sécurisée</h3>
+                    </span>
+                </div>
+                <div class="services service-4">
+                    <span class="services-icons">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="40" height="40" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                        <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)">
+                        <path d="M2245 5113 c-230 -13 -393 -27 -525 -44 -757 -97 -1254 -301 -1378 -566 l-27 -58 0 -1885 0 -1885 26 -55 c47 -101 179 -220 327 -294 761 -384 2532 -437 3521 -106 311 103 516 243 590 400 l26 55 0 1885 0 1885 -26 55 c-152 324 -843 553 -1843 610 -160 9 -563 11 -691 3z m680 -303 c570 -32 1104 -139 1380 -278 118 -59 205 -134 205 -176 0 -9 -20 -36 -45 -60 -173 -169 -706 -311 -1380 -368 -200 -16 -866 -16 -1055 0 -547 49 -966 142 -1240 275 -96 47 -180 120 -180 157 0 41 87 113 202 169 443 214 1284 326 2113 281z m-2101 -950 c264 -105 720 -192 1211 -232 204 -16 860 -16 1060 0 567 47 1022 145 1313 282 l102 49 0 -411 0 -412 -48 -45 c-152 -146 -632 -284 -1202 -346 -344 -37 -911 -44 -1245 -15 -646 56 -1192 201 -1357 360 l-48 46 0 111 0 112 103 -49 c275 -129 745 -234 1227 -273 l155 -12 6 40 c3 22 9 88 12 147 8 126 30 111 -178 128 -574 47 -1118 198 -1282 355 l-43 42 0 111 0 112 70 -35 c38 -19 103 -48 144 -65z m0 -1200 c264 -105 719 -192 1211 -232 202 -16 860 -16 1050 0 608 53 1033 144 1322 281 l103 50 0 -411 0 -412 -48 -45 c-152 -146 -632 -284 -1202 -346 -344 -37 -911 -44 -1245 -15 -646 56 -1192 201 -1357 360 l-48 46 0 111 0 112 103 -49 c275 -129 745 -234 1227 -273 l155 -12 6 40 c3 22 9 88 12 147 8 126 30 111 -178 128 -574 47 -1118 198 -1282 355 l-43 42 0 111 0 112 70 -35 c38 -19 103 -48 144 -65z m0 -1200 c265 -105 717 -192 1211 -232 202 -16 860 -16 1050 0 608 53 1033 144 1322 281 l103 50 0 -406 c0 -465 7 -431 -98 -502 -119 -80 -274 -142 -510 -202 -654 -167 -1584 -196 -2332 -73 -423 69 -788 195 -910 313 l-50 47 0 111 0 112 103 -49 c275 -129 745 -234 1227 -273 l155 -12 6 40 c3 22 9 88 12 147 8 126 30 111 -178 128 -334 27 -679 92 -935 177 -128 42 -290 126 -342 178 l-48 47 0 109 0 109 70 -35 c38 -19 103 -48 144 -65z"/>
+                        <path d="M2410 3160 l0 -150 150 0 150 0 0 150 0 150 -150 0 -150 0 0 -150z"/>
+                        <path d="M2410 1960 l0 -150 150 0 150 0 0 150 0 150 -150 0 -150 0 0 -150z"/>
+                        <path d="M2410 760 l0 -150 150 0 150 0 0 150 0 150 -150 0 -150 0 0 -150z"/>
+                        </g>
+                        </svg>
+                    </span>
+                    <span class="services-text">
+                        <h3>Base de Données</h3>
+                    </span>
+                </div>
+            </article>
+        </section>
+        <article id="customer-prez-box">
+            <div id="customer-prez-bloc" class="reveal">
+                <h2>Hourglasses Harry Potter</h2>
+                <p>Hourglasses Harry Potter est une <strong>Application Web</strong> réalisée pour l'animation annuelle d'une classe de CM1-CM2 sur le thème d'Harry Potter.<br>
+                Le professeur des écoles se connecte via un login et est redirigé vers une page d'animation de Sabliers. Il a la possibilité d'attribuer ou retirer des points aux différentes maisons (4) via l'input prévu à cet effet.<br>
+                Ces points sont attribués en fonction de petites animations en parallèle de leur programme scolaire.<br>
+                La priorité est de visualiser les 4 sabliers, le nombres de points correspondants et le sable qui se rempli en fonction de nombre de ces derniers (maximum 2000 points).</p>
+            </div>
+        </article>
+        <aside id="swiper-4-bloc">
+            <div class="swiper swiper-4 reveal">
+                <div class="swiper-wrapper swiper-wrapper-4">
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/hp-prez.webp" alt="Image de la page d'accueil de l'application Harry Potter">
+                    </div>
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/hp-3.png" alt="Image d'une page de l'application Harry Potter sur appareil mobile">
+                    </div>
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/hp-2.PNG" alt="Image d'une page de l'application Harry Potter">
+                    </div>
+                    <div class="swiper-slide swiper-slide-4">
+                        <img src="./assets/images/sites/hp-4.PNG" alt="Image d'une page de l'application Harry Potter">
+                    </div>
+                </div>
+                <div class="swiper-button-prev swiper-button-prev-4"></div>
+                <div class="swiper-button-next swiper-button-next-4"></div>
+            </div>
+        </aside>
+        <article id="second-prez" class="second-prez-services">
+            <div id="second-prez-text-bloc" class="reveal">
+                <p>Un coup de coeur? Un projet qui vous donne des idées? Notre travail vous plait?</p>
+                <a href="contact.html"><input type="button" value="Parlons en!" id="contact-button"></a>
+            </div>
+        </article>
+        <aside id='banner-cookies' class="hidden-consent">
+            <p id='banner-txt'>En poursuivant votre navigation, sans changer les paramètres de votre navigateur, vous acceptez l'utilisation de cookies pour garantir une bonne expérience sur notre site.</p>
+            <span id="cookies-buttons-box">
+                <input type='button' value='Accepter' id='banner-button-accept'>
+                <input type='button' value='Refuser' id='banner-button-decline'>
+                <input type='button' value='Préférences' id='banner-button-pref'>
+            </span>
+        </aside>
+        <aside id="cookies-preferences" class="hidden-consent">
+            <h2>Gérer le consentement aux Cookies</h2>
+            <span id="checkbox-box">
+                <input type="checkbox" name="consent-stat" id="checkbox-stat">
+                <label for="checkbox-stat">Utilisation de Statistiques (Google Analytics)</label>
+            </span>
+            <p>Le stockage ou l’accès technique qui est utilisé exclusivement à des fins statistiques.</p>
+            <input type="button" value="Appliquer" id="validate-pref">
+        </aside>
+        <footer>
+            <div id="bloc-footer">
+                <div id="links-footer">
+                    <ul>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
+                        <li>&copy; 2022 Westcode Développement</li>
+                    </ul>
+                </div>
+                <div id="social-footer">
+                    <ul>
+                        <li><a href="https://www.facebook.com/Westcode-d%C3%A9veloppement-102062019180186" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></a></li>
+                        <li><a href="https://www.linkedin.com/company/westcode-developpement" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a></li>
+                        <li><a href="mailto:anthony.matvienko@westcode-dev.fr"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script src="assets/js/cookies.js"></script>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+        <script src="assets/js/sites.js"></script>
+        <script src="assets/js/burger-menu.js"></script>
+        <script src="assets/js/animations-sites.js"></script>
+    </body>
+</html>

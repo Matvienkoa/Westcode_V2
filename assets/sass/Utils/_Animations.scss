@@ -1,0 +1,91 @@
+// Header
+@keyframes apparition-header {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.apparition-header {
+    animation: apparition-header 2000ms forwards;
+}
+.apparition-background {
+    animation: apparition-header 1700ms forwards;
+}
+
+// Titles
+@keyframes apparition-title {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.apparition-title-index {
+    animation: apparition-title 1000ms 300ms forwards;
+}
+.apparition-text-index {
+    animation: apparition-title 1000ms 500ms forwards;
+}
+.apparition-button-index {
+    animation: apparition-title 1000ms 700ms forwards;
+}
+.apparition-video {
+    animation: apparition-title 1000ms forwards;
+}
+.apparition-second-prez {
+    animation: apparition-title 1000ms 900ms forwards;
+}
+
+// Reveal
+.reveal {
+    opacity: 0;
+    transform: translateY(20px);
+}
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1200ms cubic-bezier(.5, 0, 0, 1);
+}
+
+// Services
+.service-anim-1{
+    animation: apparition-title 1000ms forwards;
+}
+.service-anim-2 {
+    animation: apparition-title 1000ms 150ms forwards;
+}
+.service-anim-3 {
+    animation: apparition-title 1000ms 300ms forwards;
+}
+.service-anim-4 {
+    animation: apparition-title 1000ms 450ms forwards;
+}
+.service-anim-5 {
+    animation: apparition-title 1000ms 600ms forwards;
+}
+.service-anim-6 {
+    animation: apparition-title 1000ms 750ms forwards;
+}
+
+// Burger Menu
+@keyframes apparition-burger-menu {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+@keyframes disparition-burger-menu {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: O;
+    }
+}

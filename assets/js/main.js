@@ -71,7 +71,7 @@ buttons.forEach(button => {
       if(slide.classList.contains('swiper-slide-2')) {
         const dataId = slide.children[0].children[0].dataset.id;
         blocLogo.innerHTML = ''
-        blocLogo.innerHTML = `<img src="assets/images/${dataId}" id="customer-logo" class="apparition-logo">`
+        blocLogo.innerHTML = `<img src="assets/images/sites/${dataId}" id="customer-logo" class="apparition-logo">`
       }
     })
   })

@@ -1,0 +1,72 @@
+@mixin Font-Title-h1-1 {
+    font-family: 'Squada One', cursive;
+    font-weight: 600;
+    line-height: 1;
+}
+@mixin Font-Title-h1-2 {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 500;
+    line-height: 1;
+}
+@mixin Font-Title-h1-3 {
+    font-family: 'Anton', sans-serif;
+    font-weight: 500;
+    line-height: 1.2;
+}
+@mixin Font-Title-h1-4 {
+    font-family: 'Teko', sans-serif;
+    font-weight: 600;
+    line-height: 1;
+    
+}
+@mixin Font-Title-h1-5 {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 500;
+    line-height: 1;
+}
+@mixin Font-Title-h1-6 {
+    font-family: 'Antonio', sans-serif;
+    font-weight: 700;
+}
+@mixin Font-Title-h1-7 {
+    font-family: 'Kanit', sans-serif;
+    line-height: 1.1;
+}
+@mixin Font-Title-h1-8 {
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 1.2;
+}
+
+@mixin Font-p-1 {
+    font-family: 'Fjalla One', sans-serif;
+    line-height: 1.2;
+}
+
+@mixin Gradient-1 {
+    background: linear-gradient(95.86deg, #fdd173 3.65%, #fed687 23.1%, #ffe1ad 43.97%, #fed47e 61.99%, #ae7b33 94.71%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+@mixin Gradient-2 {
+    background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+@mixin Gradient-3 {
+    background-image: linear-gradient(90deg, rgb(171, 118, 76), #ffe1ad);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+@mixin Gradient-4 {
+    background-image: linear-gradient(90deg, rgb(247, 14, 199), rgb(24, 34, 250));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+@mixin Gradient-5 {
+    background-image: linear-gradient(270deg, rgb(68, 144, 190), rgb(251, 254, 241));
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+

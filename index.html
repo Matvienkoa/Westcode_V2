@@ -2,85 +2,123 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
+        <meta name="description" content="Westcode, Studio de Développement, vous accompagne dans votre transition numérique, dans le développement de vos projets Web, dans votre marketing et votre communication : Développement Site Web Vitrine, Application Web, PWA, Application Mobile, Outils Internes, Référencement SEO/SEA/Mediabuy, Communication/Marketing Web">
+        <meta name="robots" content="index, follow">
+        <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="assets/css/style.css" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Westcode Développement</title>
+        <title>Westcode Développement - Studio de Développement</title>
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Anton&family=Antonio:wght@500&family=Bebas+Neue&family=Chakra+Petch:wght@700&family=Fjalla+One&family=Kanit:wght@600&family=Lato:wght@300&family=Squada+One&family=Teko:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header id="header">
             <div id="bloc-head">
                 <picture>
-                    <img src="assets/images/logo.webp" alt="" id="logo">
+                    <img src="assets/images/logo.webp" alt="Logo de Westcode Développement" id="logo">
                 </picture>
-                <nav>
+                <nav id="nav-menu">
                     <ul id="main-menu">
-                        <li><a href="index.html">Accueil</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="portfolio.html">Réalisations</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a data-link="index.html" class="links link-menu-index" aria-label="Aller vers l'accueil">Accueil</a></li>
+                        <li><a data-link="services.html" class="links" aria-label="Aller vers la page services">Services</a></li>
+                        <li><a data-link="portfolio.html" class="links" aria-label="Aller vers la page réalisations">Réalisations</a></li>
+                        <li><a data-link="contact.html" class="links" aria-label="Aller vers la page de contact">Contact</a></li>
                     </ul>
                     <ul id="social-menu">
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></li>
+                        <li><a href="https://www.facebook.com/Westcode-d%C3%A9veloppement-102062019180186" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></a></li>
+                        <li><a href="https://www.linkedin.com/company/westcode-developpement" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a></li>
+                        <li><a href="mailto:anthony.matvienko@westcode-dev.fr"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></a></li>
                     </ul>
                 </nav>
+                <span id="burger-button" class="burger-button-visible">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="30px" height="30px" viewBox="0 0 256.000000 256.000000" preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                    <path d="M296 2057 c-109 -61 -106 -221 5 -277 37 -19 63 -20 979 -20 916 0 942 1 979 20 113 57 113 223 0 280 -37 19 -63 20 -981 20 l-943 0 -39 -23z"/>
+                    <path d="M296 1417 c-109 -61 -106 -221 5 -277 37 -19 63 -20 979 -20 916 0 942 1 979 20 113 57 113 223 0 280 -37 19 -63 20 -981 20 l-943 0 -39 -23z"/>
+                    <path d="M296 777 c-109 -61 -106 -221 5 -277 37 -19 63 -20 979 -20 916 0 942 1 979 20 113 57 113 223 0 280 -37 19 -63 20 -981 20 l-943 0 -39 -23z"/>
+                    </g>
+                    </svg>
+                </span>
+                <span id="burger-cross" class="burger-cross-hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="white" width="25px" height="25px" viewBox="0 0 256.000000 256.000000">
+                    <g transform="translate(0.000000,256.000000) scale(0.100000,-0.100000)">
+                    <path d="M63 2540 c-54 -33 -78 -102 -52 -153 6 -12 255 -266 553 -564 l541 -543 -541 -542 c-298 -299 -547 -553 -553 -565 -47 -93 69 -209 162 -162 12 6 266 255 565 553 l542 541 543 -541 c298 -298 552 -547 564 -553 93 -47 209 69 162 162 -6 12 -255 266 -553 564 l-541 543 541 543 c298 298 547 552 553 564 47 93 -69 209 -162 162 -12 -6 -266 -255 -564 -553 l-543 -541 -542 541 c-299 298 -553 547 -565 553 -33 16 -74 13 -110 -9z"/>
+                    </g>
+                    </svg>
+                </span>
             </div>
+            <nav id="nav-menu-burger" class="nav-menu-burger-hidden">
+                <ul id="main-menu-burger">
+                    <li><a data-link="index.html" class="links link-menu-index" aria-label="Aller vers l'accueil">Accueil</a></li>
+                    <li><a data-link="services.html" class="links" aria-label="Aller vers la page services">Services</a></li>
+                    <li><a data-link="portfolio.html" class="links" aria-label="Aller vers la page réalisations">Réalisations</a></li>
+                    <li><a data-link="contact.html" class="links" aria-label="Aller vers la page de contact">Contact</a></li>
+                </ul>
+                <ul id="social-menu-burger">
+                    <li><a href="https://www.facebook.com/Westcode-d%C3%A9veloppement-102062019180186" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></a></li>
+                    <li><a href="https://www.linkedin.com/company/westcode-developpement" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a></li>
+                    <li><a href="mailto:anthony.matvienko@westcode-dev.fr"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></a></li>
+                </ul>
+            </nav>
         </header>
+        <div class="transition transition-off">
+            <img src="assets/images/logo.webp" alt="Logo de Westcode Développement" class="logo-transition">
+        </div>
         <div id="background">
-            <img src="assets/images/3.png" alt="" id="background-img">
+            <img src="assets/images/keyboard/3.jpg" alt="Photo d'un clavier d'ordinateur sur un bureau" id="background-img">
             <div id="main-prez">
                 <div id="title">
-                    <h1>Studio de Développement</h1>
-                    <p>Au service de votre Digital, Nous Créons à votre Image!</p>
-                    <input type="button" value="Contactez Nous">
+                    <h1 id="title-index">Studio de Développement</h1>
+                    <p id="text-index"><strong>Au service de votre Digital</strong>, Nous Créons à votre Image!</p>
+                    <a href="contact.html"><input id="button-index" type="button" value="Contactez Nous"></a>
                 </div>
                 <div id="video">
-                    <video src="assets/videos/prez.mp4" id="sample" ></video>
+                    
+                    <video src="assets/videos/prez-logo-3.mp4" id="sample" autoplay="true" muted="true" loop="true"></video>
                     <!-- autoplay="true" muted="true" loop="true" -->
                 </div>
             </div>
         </div>
         <div class="shadow-img"></div>
         <article id="second-prez">
-            <div id="second-prez-text-bloc">
-                <p>Westcode, Studio de Développement, vous accompagne et soutient votre transition digitale!
-                Promouvoir son Image, son Expertise, ses Services ou ses Produits via les nouvelles Technologies est aujourd'hui incontournable!
-                Définissons ensemble vos Stratégies et vos Projets!</p>
+            <div id="second-prez-text-bloc" class="reveal">
+                <p>Westcode, Jeune <strong>Studio de Développement</strong>, contribue au <strong>développement numérique</strong> et a pour mission principale de participer à la construction du monde de Demain!
+                Laissez vous embarquer dans notre aventure moderne et agissons ensemble pour faciliter votre futur et le rendre plus accessible!</p>
             </div>
         </article>
         <aside id="swiper-1-bloc">
-            <div class="swiper swiper-1">
+            <div class="swiper swiper-1 reveal">
                 <div class="swiper-wrapper swiper-wrapper-1">
                     <div class="swiper-slide swiper-slide-1">
                         <div class="slide-prez slide-prez-1">
                             <h2>Transition Digitale</h2>
-                            <img src="assets/images/paint-1.png" alt="">
-                            <span><img src="assets/images/swiper-1.jpg" alt=""></span>
-                            <p>Westcode, Studio de Développement, vous accompagne et soutient votre transition digitale!
-                            Promouvoir son Image, son Expertise, ses Services ou ses Produits via les nouvelles Technologies est aujourd'hui incontournable!
+                            <img src="assets/images/tests/1W.png" alt="Image d'une trace de peinture utilisée pour l'arrière plan du titre">
+                            <span><img src="assets/images/swiper1/digital-transformation.jpg" alt="Image d'une sphère noire représentant une illustration du digital"></span>
+                            <p>Nous vous accompagnons et soutenons votre <strong>transition numérique</strong>!
+                            <strong>Promouvoir son Image, son Expertise, ses Services ou ses Produits</strong> via les <strong>Technologies Digitales</strong> est aujourd'hui incontournable!
                             Définissons ensemble vos Stratégies et vos Projets!</p>
                         </div>
                     </div>
                     <div class="swiper-slide swiper-slide-1">
                         <div class="slide-prez slide-prez-1">
                             <h2>Site Web, Applications</h2>
-                            <img src="assets/images/paint-1.png" alt="">
-                            <span><img src="assets/images/swiper-1.jpg" alt=""></span>
-                            <p>Nous Pensons, Créons et Développons selon vos Besoins, votre Stratégie et votre Image.
-                            Page Web, Site Web Vitrine, Site Web Personnalisé / Sur-Mesure, Boutique en ligne / E-commerce, Applications, Réseaux Sociaux!</p>
+                            <img src="assets/images/tests/1W.png" alt="Image d'une trace de peinture utilisée pour l'arrière plan du titre">
+                            <span><img src="assets/images/swiper1/website.jpg" alt="Photo d'un laptop avec des mains d'une personne qui travaille dessus"></span>
+                            <p>Nous Pensons, Créons et <strong>Développons selon vos Besoins, votre Stratégie et votre Image</strong>.
+                            <strong>Site Web Vitrine / Personnalisé / Sur-Mesure, Boutique en ligne / E-commerce, Outils Internes / Logistiques, Applications, Réseaux Sociaux</strong>!</p>
                         </div>
                     </div>
                     <div class="swiper-slide swiper-slide-1">
                         <div class="slide-prez slide-prez-1">
                             <h2>Communication</h2>
-                            <img src="assets/images/paint-1.png" alt="">
-                            <span><img src="assets/images/swiper-1.jpg" alt=""></span>
-                            <p>Nous assurons votre Stratégie, votre Communication et votre Image sur le Web!
-                            Améliorez votre Présence et votre Visibilité sur le Web et les Réseaux Sociaux.
-                            Boostez vos Performances e-commerce avec une stratégie efficace et un marketing travaillé.</p>
+                            <img src="assets/images/tests/1W.png" alt="Image d'une trace de peinture utilisée pour l'arrière plan du titre">
+                            <span><img src="assets/images/swiper1/advertising.jpg" alt="Photo de publicités affichées sur des buildings de nuit"></span>
+                            <p>Nous assurons votre <strong>Stratégie, votre Communication et votre Image sur le Web</strong> et partout ailleurs!
+                            Améliorez votre <strong>Présence et votre Visibilité sur le Web et les Réseaux Sociaux</strong>.
+                            Boostez vos <strong>Performances e-commerce</strong> avec une stratégie efficace et un marketing travaillé.</p>
                         </div>
                     </div>
                 </div>
@@ -88,82 +126,83 @@
                 <div class="swiper-button-next swiper-button-next-1"></div>
             </div>
         </aside>
-        <div id="services-bloc">
+        <section id="services-bloc">
             <article id="services-box">
-                <div class="services">
+                <a href="services.html" class="services service-1">
                     <span class="services-icons">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M12,0A12,12,0,1,0,24,12,12.013,12.013,0,0,0,12,0Zm8.647,7H17.426a19.676,19.676,0,0,0-2.821-4.644A10.031,10.031,0,0,1,20.647,7ZM16.5,12a10.211,10.211,0,0,1-.476,3H7.976A10.211,10.211,0,0,1,7.5,12a10.211,10.211,0,0,1,.476-3h8.048A10.211,10.211,0,0,1,16.5,12ZM8.778,17h6.444A19.614,19.614,0,0,1,12,21.588,19.57,19.57,0,0,1,8.778,17Zm0-10A19.614,19.614,0,0,1,12,2.412,19.57,19.57,0,0,1,15.222,7ZM9.4,2.356A19.676,19.676,0,0,0,6.574,7H3.353A10.031,10.031,0,0,1,9.4,2.356ZM2.461,9H5.9a12.016,12.016,0,0,0-.4,3,12.016,12.016,0,0,0,.4,3H2.461a9.992,9.992,0,0,1,0-6Zm.892,8H6.574A19.676,19.676,0,0,0,9.4,21.644,10.031,10.031,0,0,1,3.353,17Zm11.252,4.644A19.676,19.676,0,0,0,17.426,17h3.221A10.031,10.031,0,0,1,14.605,21.644ZM21.539,15H18.1a12.016,12.016,0,0,0,.4-3,12.016,12.016,0,0,0-.4-3h3.437a9.992,9.992,0,0,1,0,6Z"/></svg>
                     </span>
                     <span class="services-text">
-                        <h3>Création de Site Web Vitrine</h3>
+                        <h3>Site Web Vitrine, Sur Mesure</h3>
                     </span>
-                </div>
-                <div class="services">
+                </a>
+                <a href="services.html" class="services service-2">
                     <span class="services-icons">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M22.713,4.077A2.993,2.993,0,0,0,20.41,3H4.242L4.2,2.649A3,3,0,0,0,1.222,0H1A1,1,0,0,0,1,2h.222a1,1,0,0,1,.993.883l1.376,11.7A5,5,0,0,0,8.557,19H19a1,1,0,0,0,0-2H8.557a3,3,0,0,1-2.82-2h11.92a5,5,0,0,0,4.921-4.113l.785-4.354A2.994,2.994,0,0,0,22.713,4.077ZM21.4,6.178l-.786,4.354A3,3,0,0,1,17.657,13H5.419L4.478,5H20.41A1,1,0,0,1,21.4,6.178Z"/><circle cx="7" cy="22" r="2"/><circle cx="17" cy="22" r="2"/></svg>
                     </span>
                     <span class="services-text">
-                        <h3>Site Web Custom, E-Commerce, Réseau Social</h3>
+                        <h3>E-Commerce, Réseau Social</h3>
                     </span>
-                </div>
-                <div class="services">
+                </a>
+                <a href="services.html" class="services service-3">
                     <span class="services-icons">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M15,0H9A5.006,5.006,0,0,0,4,5V19a5.006,5.006,0,0,0,5,5h6a5.006,5.006,0,0,0,5-5V5A5.006,5.006,0,0,0,15,0ZM9,2h6a3,3,0,0,1,3,3V16H6V5A3,3,0,0,1,9,2Zm6,20H9a3,3,0,0,1-3-3V18H18v1A3,3,0,0,1,15,22Z"/><circle cx="12" cy="20" r="1"/></svg>
                     </span>
                     <span class="services-text">
                         <h3>Application Mobile, PWA</h3>
                     </span>
-                </div>
-                <div class="services">
+                </a>
+                <a href="services.html" class="services service-4">
                     <span class="services-icons">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><g><path d="M12.479,14.265v-3.279h11.049c0.108,0.571,0.164,1.247,0.164,1.979c0,2.46-0.672,5.502-2.84,7.669   C18.744,22.829,16.051,24,12.483,24C5.869,24,0.308,18.613,0.308,12S5.869,0,12.483,0c3.659,0,6.265,1.436,8.223,3.307L18.392,5.62   c-1.404-1.317-3.307-2.341-5.913-2.341C7.65,3.279,3.873,7.171,3.873,12s3.777,8.721,8.606,8.721c3.132,0,4.916-1.258,6.059-2.401   c0.927-0.927,1.537-2.251,1.777-4.059L12.479,14.265z"/></g></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 24 24" fill="white"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
                     </span>
                     <span class="services-text">
-                        <h3>Référencement (SEO)</h3>
+                        <h3>Outils Internes, Logistiques, RH</h3>
                     </span>
-                </div>
-                <div class="services">
+                </a>   
+                <a href="services.html" class="services service-5">
                     <span class="services-icons">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="white" height="40" viewBox="0 0 24 24" width="40"><path d="m17 0a1 1 0 0 0 -1 1c0 2.949-2.583 4-5 4h-7a4 4 0 0 0 -4 4v2a3.979 3.979 0 0 0 1.514 3.109l3.572 7.972a3.233 3.233 0 0 0 2.953 1.919 2.982 2.982 0 0 0 2.72-4.2l-2.2-4.8h2.441c2.417 0 5 1.051 5 4a1 1 0 0 0 2 0v-18a1 1 0 0 0 -1-1zm-8.063 20.619a.983.983 0 0 1 -.898 1.381 1.232 1.232 0 0 1 -1.126-.734l-2.808-6.266h2.254zm7.063-6.019a7.723 7.723 0 0 0 -5-1.6h-7a2 2 0 0 1 -2-2v-2a2 2 0 0 1 2-2h7a7.723 7.723 0 0 0 5-1.595zm7.9.852a1 1 0 0 1 -1.342.448l-2-1a1 1 0 0 1 .894-1.79l2 1a1 1 0 0 1 .448 1.337zm-3.79-9a1 1 0 0 1 .448-1.342l2-1a1 1 0 1 1 .894 1.79l-2 1a1 1 0 0 1 -1.342-.448zm-.11 3.548a1 1 0 0 1 1-1h2a1 1 0 0 1 0 2h-2a1 1 0 0 1 -1-1z"/></svg>
                     </span>
                     <span class="services-text">
-                        <h3>Communication Web</h3>
+                        <h3>Communication, Web Marketing</h3>
                     </span>
-                </div>
-                <div class="services">
+                </a>
+                <a href="services.html" class="services service-6">
                     <span class="services-icons">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M22.922,1.7a2.985,2.985,0,0,0-2.458-.648l-6.18,1.123A3.993,3.993,0,0,0,12,3.461,3.993,3.993,0,0,0,9.716,2.172L3.536,1.049A3,3,0,0,0,0,4V20.834l12,2.183,12-2.183V4A2.992,2.992,0,0,0,22.922,1.7ZM11,20.8,2,19.166V4a1,1,0,0,1,1.179-.983L9.358,4.14A2,2,0,0,1,11,6.108Zm11-1.636L13,20.8V6.108A2,2,0,0,1,14.642,4.14l6.179-1.123A1,1,0,0,1,22,4Z"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><g><path d="M12.479,14.265v-3.279h11.049c0.108,0.571,0.164,1.247,0.164,1.979c0,2.46-0.672,5.502-2.84,7.669   C18.744,22.829,16.051,24,12.483,24C5.869,24,0.308,18.613,0.308,12S5.869,0,12.483,0c3.659,0,6.265,1.436,8.223,3.307L18.392,5.62   c-1.404-1.317-3.307-2.341-5.913-2.341C7.65,3.279,3.873,7.171,3.873,12s3.777,8.721,8.606,8.721c3.132,0,4.916-1.258,6.059-2.401   c0.927-0.927,1.537-2.251,1.777-4.059L12.479,14.265z"/></g></svg>
                     </span>
                     <span class="services-text">
-                        <h3>Formation</h3>
+                        <h3>Référencement (SEO-SEA-MediaBuy)</h3>
                     </span>
-                </div>   
+                </a>
             </article>
-        </div>
+        </section>
         <section id="history-bloc">
-            <img src="assets/images/2.png" alt="" id="background-img-2">
-            <div id="history-prez">
+            <img src="assets/images/keyboard/4.jpg" alt="Photo de touches de clavier en gros plan" id="background-img-2">
+            <div id="history-prez" class="reveal">
                 <div id="history-title">
                     <h2>Notre Histoire</h1>
-                    <p>Un Duo de choc! Après une sacrée expérience commerciale et une passion commune pour le Développement, nous avons créé WestCode!
+                    <p>Un Duo de choc! Après une belle expérience commerciale et une passion commune pour le Développement, nous avons créé WestCode!
                     Nous partageons et créons les Projets qui répondent le mieux aux critères de nos clients!</p>
-                    <input type="button" value="Nous Rencontrer">
+                    <a href="contact.html"><input type="button" value="Nous Rencontrer"></a>
                 </div>
                 <div id="history-photo-box">
-                    <img src="assets/images/ju.jpg" alt="" id="history-s">
+                    <img src="assets/images/ju.jpg" alt="" id="history-photo">
                 </div>
             </div>
         </section>
-        <div class="shadow-img-2"></div>
         <section id="swiper-2-section">
-            <div id="swiper-2-bloc">
+            <div id="swiper-2-bloc" class="reveal">
                 <div id="swiper-2-logo-bloc">
-                    <h2>Nos clients</h2>
-                    <p>Certains sont experts de votre BBQ réussi, d'autres de votre cave ou encore de l'apprentissage scolaire de vos enfants!
-                    Leur Point Commun : leur Satisfaction!
-                    Allez-y, Entrez et vous découvrirez comment WestCode les a accompagnés dans leurs Projets!</p>
+                    <span id="bloc-text">
+                        <h2>Ils nous font confiance!</h2>
+                        <p>Certains sont experts de l'entretien de votre véhicule, d'autres de votre cave à vins!
+                        Leur Point Commun : leur Satisfaction!
+                        Découvrirez comment WestCode les a accompagnés dans leurs Projets!</p>
+                    </span>
                     <span id="bloc-logo">
-                        <img src="assets/images/directauto.png" alt="" id="customer-logo" class="apparition-logo">
+                        <img src="assets/images/sites/directauto.png" alt="Logo de l'entreprise cliente" id="customer-logo" class="apparition-logo">
                     </span>
                 </div>
                 <div id="swiper-2-swiper-bloc">
@@ -171,27 +210,33 @@
                         <div class="swiper-wrapper swiper-wrapper-2">
                             <div class="swiper-slide swiper-slide-2">
                                 <div class="slide-prez slide-prez-2">
-                                    <img class="slide-photo" data-id="directauto.png" src="assets/images/directauto-prez.webp" alt="">
+                                    <img class="slide-photo" data-id="directauto.png" src="assets/images/sites/directauto-prez.PNG" alt="Image de la page d'accueil du site de Direct Auto">
                                 </div>
-                                <h3>Direct Auto</h3>
+                                <a href="directauto.html"><h3>Direct Auto</h3></a>
                             </div>
                             <div class="swiper-slide swiper-slide-2">
                                 <div class="slide-prez slide-prez-2">
-                                    <img class="slide-photo" data-id="mylaser.webp" src="assets/images/mylaser-prez.webp" alt="">
+                                    <img class="slide-photo" data-id="mylaser.png" src="assets/images/sites/mylaser.prez.PNG" alt="Image de la page d'accueil du site de My Laser">
                                 </div>
-                                <h3>My Laser</h3>
+                                <a href="mylaser.html"><h3>My Laser</h3></a>
                             </div>
                             <div class="swiper-slide swiper-slide-2">
                                 <div class="slide-prez slide-prez-2">
-                                    <img class="slide-photo" data-id="logo.webp" src="assets/images/3.png" alt="">
+                                    <img class="slide-photo" data-id="lt24.webp" src="assets/images/sites/lt24-prez.PNG" alt="Image de la page d'accueil du site de LT24">
                                 </div>
-                                <h3>Westcode</h3>
+                                <a href="lt24.html"><h3>LT24 Transport</h3></a>
                             </div>
                             <div class="swiper-slide swiper-slide-2">
                                 <div class="slide-prez slide-prez-2">
-                                    <img class="slide-photo" data-id="4" src="assets/images/2.png" alt="">
+                                    <img class="slide-photo" data-id="findawine.png" src="assets/images/sites/findawine-prez.PNG" alt="Image de la page d'accueil de l'application Findawine">
                                 </div>
-                                <h3>Direct Auto</h3>
+                                <a href="findawine.html"><h3>FindAWine</h3></a>
+                            </div>
+                            <div class="swiper-slide swiper-slide-2">
+                                <div class="slide-prez slide-prez-2">
+                                    <img class="slide-photo" data-id="serpentard.png" src="assets/images/sites/hp-prez.webp" alt="Image de la page d'accueil de l'application Harry Potter">
+                                </div>
+                                <a href="hourglasses-hp.html"><h3>Hourglasses HP</h3></a>
                             </div>
                         </div>
                         <div class="swiper-button-prev swiper-button-prev-2 swiper-2-button"></div>
@@ -200,75 +245,99 @@
                 </div>
             </div>
         </section>
-            
         <section id="section-lists">
-            <div id="bloc-lists">
+            <div id="bloc-lists" class="reveal">
                 <ul class="ul-lists">
                     <li>
                         <div>
-                            <h4>Titre 1</h4>
+                            <h4>L'état vous accompagne</h4>
                             <span class="arrow-button" data-id="1"><svg class="arrow-svg" data-id="1" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M19.061,7.854a1.5,1.5,0,0,0-2.122,0l-4.586,4.585a.5.5,0,0,1-.707,0L7.061,7.854A1.5,1.5,0,0,0,4.939,9.975l4.586,4.586a3.5,3.5,0,0,0,4.95,0l4.586-4.586A1.5,1.5,0,0,0,19.061,7.854Z"/></svg></span>
                         </div>
-                        <p class="text-list hidden" data-id="1">Paragraphe 1</p>
+                        <p class="text-list hidden" data-id="1"><br>L'état soutient et accompagne votre <a href="https://www.economie.gouv.fr/plan-de-relance/mesures/aides-france-num-transformation-numerique" target="_blank"><strong>transformation numérique</strong></a>.<br>
+                        Des dispositifs d'aide aux entreprises pour développer leurs activités au moyen du numérique ont été mis en place.<br>
+                        Rendez-vous sur <a href="https://www.francenum.gouv.fr/" target="_blank">France Num</a> : Informations, Accompagnement, Financement!<br></p>
                     </li>
                     <li>
                         <div>
-                            <h4>Titre 2</h4>
+                            <h4>Nos évènements</h4>
                             <span class="arrow-button" data-id="2"><svg class="arrow-svg" data-id="2" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M19.061,7.854a1.5,1.5,0,0,0-2.122,0l-4.586,4.585a.5.5,0,0,1-.707,0L7.061,7.854A1.5,1.5,0,0,0,4.939,9.975l4.586,4.586a3.5,3.5,0,0,0,4.95,0l4.586-4.586A1.5,1.5,0,0,0,19.061,7.854Z"/></svg></span>
                         </div>
-                        <p class="text-list hidden" data-id="2">Paragraphe 2</p>
+                        <p class="text-list hidden" data-id="2"><br>Retrouvez nous régulièrement lors d'évènements sur le Numérique! Principalement lors de rencontres organisées par <a href="https://www.laval-frenchtech.fr/" target="_blank">Le Numérique en Mayenne</a>, mais aussi un peu partout.<br></p>
                     </li>
                     <li>
                         <div>
-                            <h4>Titre 3</h4>
+                            <h4>Nos Engagements</h4>
                             <span class="arrow-button" data-id="3"><svg class="arrow-svg" data-id="3" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M19.061,7.854a1.5,1.5,0,0,0-2.122,0l-4.586,4.585a.5.5,0,0,1-.707,0L7.061,7.854A1.5,1.5,0,0,0,4.939,9.975l4.586,4.586a3.5,3.5,0,0,0,4.95,0l4.586-4.586A1.5,1.5,0,0,0,19.061,7.854Z"/></svg></span>
                         </div>
-                        <p class="text-list hidden" data-id="3">Paragraphe 3</p>
+                        <p class="text-list hidden" data-id="3"><br>Nous avons à coeur de placer le client et sa satisfaction au centre de nos priorités. Nous nous appuyons sur notre expertise commerciale pour écouter et répondre le plus précisément aux besoins de nos clients.<br>
+                        Nous communiquons régulièrement et conservons une proximité afin de rester disponibles.<br></p>
                     </li>
                 </ul>
                 <ul class="ul-lists">
                     <li>
                         <div>
-                            <h4>Titre 4</h4>
+                            <h4>Nous écrire</h4>
                             <span class="arrow-button" data-id="4"><svg class="arrow-svg" data-id="4" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M19.061,7.854a1.5,1.5,0,0,0-2.122,0l-4.586,4.585a.5.5,0,0,1-.707,0L7.061,7.854A1.5,1.5,0,0,0,4.939,9.975l4.586,4.586a3.5,3.5,0,0,0,4.95,0l4.586-4.586A1.5,1.5,0,0,0,19.061,7.854Z"/></svg></span>
                         </div>
-                        <p class="text-list hidden" data-id="4">Paragraphe 4</p>
+                        <p class="text-list hidden" data-id="4"><br><span class="names">Anthony</span> : anthony.matvienko@westcode-dev.fr<br><br>
+                        <span class="names">Julien</span> : julien.letiec@westcode-dev.fr<br></p>
                     </li>
                     <li>
                         <div>
-                            <h4>Titre 5</h4>
+                            <h4>Nous appeler</h4>
                             <span class="arrow-button" data-id="5"><svg class="arrow-svg" data-id="5" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M19.061,7.854a1.5,1.5,0,0,0-2.122,0l-4.586,4.585a.5.5,0,0,1-.707,0L7.061,7.854A1.5,1.5,0,0,0,4.939,9.975l4.586,4.586a3.5,3.5,0,0,0,4.95,0l4.586-4.586A1.5,1.5,0,0,0,19.061,7.854Z"/></svg></span>
                         </div>
-                        <p class="text-list hidden" data-id="5">Paragraphe 5</p>
+                        <p class="text-list hidden" data-id="5"><br><span class="names">Anthony</span> : 06 85 97 88 89<br><br>
+                        <span class="names">Julien</span> : 06 40 65 57 42<br></p>
                     </li>
                     <li>
                         <div>
-                            <h4>Titre 6</h4>
+                            <h4>Prendre un Café</h4>
                             <span class="arrow-button" data-id="6"><svg class="arrow-svg" data-id="6" xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 24 24" width="40" height="40"><path d="M19.061,7.854a1.5,1.5,0,0,0-2.122,0l-4.586,4.585a.5.5,0,0,1-.707,0L7.061,7.854A1.5,1.5,0,0,0,4.939,9.975l4.586,4.586a3.5,3.5,0,0,0,4.95,0l4.586-4.586A1.5,1.5,0,0,0,19.061,7.854Z"/></svg></span>
                         </div>
-                        <p class="text-list hidden" data-id="6">Paragraphe 6</p>
+                        <p class="text-list hidden" data-id="6"><br>LD Beauchêne 53480 VAIGES</p>
                     </li>
                 </ul>
             </div>
         </section>
+        <aside id='banner-cookies' class="hidden-consent">
+            <p id='banner-txt'>En poursuivant votre navigation, sans changer les paramètres de votre navigateur, vous acceptez l'utilisation de cookies pour garantir une bonne expérience sur notre site.</p>
+            <span id="cookies-buttons-box">
+                <input type='button' value='Accepter' id='banner-button-accept'>
+                <input type='button' value='Refuser' id='banner-button-decline'>
+                <input type='button' value='Préférences' id='banner-button-pref'>
+            </span>
+        </aside>
+        <aside id="cookies-preferences" class="hidden-consent">
+            <h2>Gérer le consentement aux Cookies</h2>
+            <span id="checkbox-box">
+                <input type="checkbox" name="consent-stat" id="checkbox-stat">
+                <label for="checkbox-stat">Utilisation de Statistiques (Google Analytics)</label>
+            </span>
+            <p>Le stockage ou l’accès technique qui est utilisé exclusivement à des fins statistiques.</p>
+            <input type="button" value="Appliquer" id="validate-pref">
+        </aside>
         <footer>
             <div id="bloc-footer">
                 <div id="links-footer">
                     <ul>
-                        <li>Mentions légales</li>
+                        <li><a href="mentions-legales.html">Mentions légales</a></li>
                         <li>&copy; 2022 Westcode Développement</li>
                     </ul>
                 </div>
                 <div id="social-footer">
                     <ul>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="wheat" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="wheat" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></li>
-                        <li><svg xmlns="http://www.w3.org/2000/svg" fill="wheat" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></li>
+                        <li><a href="https://www.facebook.com/Westcode-d%C3%A9veloppement-102062019180186" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"/></svg></a></li>
+                        <li><a href="https://www.linkedin.com/company/westcode-developpement" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M17,20v19h-6V20H17z M11,14.47c0-1.4,1.2-2.47,3-2.47s2.93,1.07,3,2.47c0,1.4-1.12,2.53-3,2.53C12.2,17,11,15.87,11,14.47z M39,39h-6c0,0,0-9.26,0-10 c0-2-1-4-3.5-4.04h-0.08C27,24.96,26,27.02,26,29c0,0.91,0,10,0,10h-6V20h6v2.56c0,0,1.93-2.56,5.81-2.56 c3.97,0,7.19,2.73,7.19,8.26V39z"/></svg></a></li>
+                        <li><a href="mailto:anthony.matvienko@westcode-dev.fr"><svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 50 50" width="30px" height="30px"><path d="M 14 4 C 8.4886661 4 4 8.4886661 4 14 L 4 36 C 4 41.511334 8.4886661 46 14 46 L 36 46 C 41.511334 46 46 41.511334 46 36 L 46 14 C 46 8.4886661 41.511334 4 36 4 L 14 4 z M 13 16 L 37 16 C 37.18 16 37.349766 16.020312 37.509766 16.070312 L 27.679688 25.890625 C 26.199688 27.370625 23.790547 27.370625 22.310547 25.890625 L 12.490234 16.070312 C 12.650234 16.020312 12.82 16 13 16 z M 11.070312 17.490234 L 18.589844 25 L 11.070312 32.509766 C 11.020312 32.349766 11 32.18 11 32 L 11 18 C 11 17.82 11.020312 17.650234 11.070312 17.490234 z M 38.929688 17.490234 C 38.979688 17.650234 39 17.82 39 18 L 39 32 C 39 32.18 38.979687 32.349766 38.929688 32.509766 L 31.400391 25 L 38.929688 17.490234 z M 20 26.410156 L 20.890625 27.310547 C 22.020625 28.440547 23.510234 29 24.990234 29 C 26.480234 29 27.959844 28.440547 29.089844 27.310547 L 29.990234 26.410156 L 37.509766 33.929688 C 37.349766 33.979688 37.18 34 37 34 L 13 34 C 12.82 34 12.650234 33.979687 12.490234 33.929688 L 20 26.410156 z"/></svg></a></li>
                     </ul>
                 </div>
             </div>
         </footer>
+        <script src="assets/js/cookies.js"></script>
         <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
         <script src="assets/js/main.js"></script>
+        <script src="assets/js/burger-menu.js"></script>
+        <script src="assets/js/animations-index.js"></script>
     </body>
 </html>
