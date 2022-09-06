@@ -10,7 +10,9 @@
         object-fit: cover;
         overflow: hidden;
         -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.png);
-        mask-image: url(https://test-wc.fr/assets/images/ju.png);
+            mask-image: url(https//test-wc.fr/assets/images/ju.png);
+            // -webkit-mask-image: url(/assets/images/ju.png);
+            // mask-image: url(/assets/images/ju.png);
         -webkit-mask-position: center;
         mask-position: center;
         -webkit-mask-size: 110%;
@@ -86,7 +88,7 @@
 .swiper-button-prev-4,
 .swiper-button-next-4 {
     color: white !important;
-    border: solid 2px #ffe1ad;
+    border: solid 2px $COLORSEC;
     border-radius: 50%;
 }
 .swiper-button-prev-4 {

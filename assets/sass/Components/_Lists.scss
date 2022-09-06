@@ -19,7 +19,7 @@
         list-style: none;
         padding: 0;
         li {
-            border-bottom: solid 1px #ffe1ad;
+            border-bottom: solid 1px $COLORSEC;
             width: 100%;
             margin-bottom: 20px;
             padding-top: 10px;
@@ -36,7 +36,7 @@
                     font-weight: 200;
                 }
                 span {
-                    border: solid 2px #ffe1ad;
+                    border: solid 2px $COLORSEC;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -56,7 +56,7 @@
                 line-height: 1.3em;
                 a {
                     text-decoration: underline;
-                    color: #ffe1ad;
+                    color: $COLORSEC;
                 }
                 .names {
                     font-size: 1.1em;

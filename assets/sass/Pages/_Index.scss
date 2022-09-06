@@ -56,7 +56,7 @@ body {
     input{
         opacity: 0;
         border: none;
-        border-bottom: solid 2px #ffe1ad;
+        border-bottom: solid 2px $COLORSEC;
         background-color: rgba(0, 0, 0, 0.473);
         color: white;
         font-size: 1.2em;
@@ -67,7 +67,7 @@ body {
         text-transform: uppercase;
         &:hover {
             color: black;
-            background-color: #ffe1ad;
+            background-color: $COLORSEC;
         }
     }
 }
@@ -85,10 +85,12 @@ body {
         overflow: hidden;
         -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.png);
         mask-image: url(https//test-wc.fr/assets/images/ju.png);
+        // -webkit-mask-image: url(/assets/images/ju.png);
+        // mask-image: url(/assets/images/ju.png);
         -webkit-mask-position: center;
         mask-position: center;
-        -webkit-mask-size: 115%;
-        mask-size: 115%;
+        -webkit-mask-size: 110%;
+        mask-size: 110%;
         -webkit-mask-repeat: no-repeat;
         mask-repeat: no-repeat;
     }
@@ -184,7 +186,9 @@ body {
             object-fit: cover;
             object-position: center;
             -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.png);
-            mask-image: url(https://test-wc.fr/assets/images/ju.png);
+                mask-image: url(https//test-wc.fr/assets/images/ju.png);
+                // -webkit-mask-image: url(/assets/images/ju.png);
+                // mask-image: url(/assets/images/ju.png);
             -webkit-mask-position: center;
             mask-position: center;
             -webkit-mask-size: 130%;
@@ -205,7 +209,7 @@ body {
 }
 .swiper-button-prev-1, .swiper-button-next-1{
     color: white!important;
-    border: solid 2px #ffe1ad;
+    border: solid 2px $COLORSEC;
     border-radius: 50%;
 }
 .swiper-button-prev-1{
@@ -247,11 +251,11 @@ body {
         box-shadow: 0 0 10px white;
     }
     &:hover>.services-text {
-        color: #ffe1ad;;
+        color: $COLORSEC;;
     }
 }
 .services-icons{
-    border: solid #ffe1ad 2px;
+    border: solid $COLORSEC 2px;
     padding: 20px 23px;
     border-radius: 50%;
     transition-property: transform box-shadow;
@@ -266,7 +270,7 @@ body {
         margin: 0;
         @include Font-Title-h1-8;
         font-weight: 100;
-        font-size: 1.1em;
+        font-size: 1em;
         text-transform: uppercase;
     }
 }
@@ -314,7 +318,7 @@ body {
     }
     input{
         border: none;
-        border-bottom: solid 2px #ffe1ad;
+        border-bottom: solid 2px $COLORSEC;
         background-color: rgba(0, 0, 0, 0.473);
         color: white;
         font-size: 1.2em;
@@ -326,7 +330,7 @@ body {
         text-transform: uppercase;
         &:hover {
             color: black;
-            background-color: #ffe1ad;
+            background-color: $COLORSEC;
         }
     }
 }
@@ -340,7 +344,9 @@ body {
         height: 100%;
         object-fit: cover;
         -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.png);
-        mask-image: url(https://test-wc.fr/assets/images/ju.png);
+            mask-image: url(https//test-wc.fr/assets/images/ju.png);
+            // -webkit-mask-image: url(/assets/images/ju.png);
+            // mask-image: url(/assets/images/ju.png);
         -webkit-mask-position: center;
         mask-position: center;
         -webkit-mask-size: 120%;
@@ -408,7 +414,7 @@ body {
 .swiper-button-prev-2,
 .swiper-button-next-2 {
     color: white !important;
-    border: solid 2px #ffe1ad;
+    border: solid 2px $COLORSEC;
     border-radius: 50%;
 }
 

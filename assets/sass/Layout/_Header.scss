@@ -39,14 +39,14 @@ header {
                 display: inline-block;
             }
             .link-menu-index, .link-menu-services, .link-menu-portfolio, .link-menu-contact{
-                color: #ffe1ad;
+                color: #fed687;
             }
             a::after {
                 content: '';
                 display: block;
                 transform: scale(0);
                 height: 2px;
-                background: #ffe1ad;
+                background: $COLORSEC;
                 transition: transform .4s;
             }
             a:hover::after {
@@ -67,7 +67,7 @@ header {
     }
 }
 .border-on{
-    border-bottom: 2px solid #ffe1ad;
+    border-bottom: 2px solid $COLORSEC;
 }
 #burger-button{
     display: none;
@@ -98,7 +98,7 @@ header {
         #burger-button{
             margin-right: 20px;
             cursor: pointer;
-            border: solid #ffe1ad 2px;
+            border: solid $COLORSEC 2px;
             padding: 10px 12px;
             border-radius: 50%;
         }
@@ -108,7 +108,7 @@ header {
         #burger-cross {
             margin-right: 20px;
             cursor: pointer;
-            border: solid #ffe1ad 2px;
+            border: solid $COLORSEC 2px;
             padding: 12.5px 14.5px;
             border-radius: 50%;
         }
@@ -153,7 +153,7 @@ header {
                     display: block;
                     transform: scale(0);
                     height: 2px;
-                    background: #ffe1ad;
+                    background: $COLORSEC;
                     transition: transform .4s;
                 }
                 a:hover::after {
@@ -163,7 +163,7 @@ header {
                 .link-menu-services,
                 .link-menu-portfolio,
                 .link-menu-contact {
-                    color: #ffe1ad;
+                    color: $COLORSEC;
                 }
             }
         }

@@ -2,7 +2,7 @@ footer {
     width: 100%;
     background-color: rgb(0, 0, 0);
     position: absolute;
-    border-top: 1px solid #ffe1ad;
+    border-top: 1px solid $COLORSEC;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -35,7 +35,7 @@ footer {
                 display: block;
                 transform: scale(0);
                 height: 2px;
-                background: #ffe1ad;
+                background: $COLORSEC;
                 transition: transform .4s;
             }
 

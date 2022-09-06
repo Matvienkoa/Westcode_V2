@@ -119,7 +119,7 @@
 .swiper-button-prev-3,
 .swiper-button-next-3 {
     color: white !important;
-    border: solid 2px #ffe1ad;
+    border: solid 2px $COLORSEC;
     border-radius: 50%;
 }
 .swiper-button-prev-3 {
@@ -161,7 +161,9 @@
                     height: 100%;
                     object-fit: cover;
                     -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.png);
-                    mask-image: url(https://test-wc.fr/assets/images/ju.png);
+                        mask-image: url(https//test-wc.fr/assets/images/ju.png);
+                        // -webkit-mask-image: url(/assets/images/ju.png);
+                        // mask-image: url(/assets/images/ju.png);
                     -webkit-mask-position: center;
                     mask-position: center;
                     -webkit-mask-size: 110%;
@@ -202,7 +204,7 @@
 #contact-button{
     text-transform: uppercase;
     border: none;
-    border-bottom: solid 2px #ffe1ad;
+    border-bottom: solid 2px $COLORSEC;
     background-color: rgba(0, 0, 0, 0.473);
     color: white;
     font-size: 1.2em;
@@ -216,7 +218,7 @@
     text-transform: uppercase;
     &:hover {
         color: black;
-        background-color: #ffe1ad;
+        background-color: $COLORSEC;
     }  
 }
 
@@ -304,7 +306,7 @@
     }
     #services-main{
         margin-top: -80px;
-        padding-top: 80px;
+        padding-top: 10px;
         #services-main-bloc{
             .services-bloc{
                 margin-bottom: 120px;
@@ -312,7 +314,7 @@
                     flex-direction: column;
                     span{
                         width: 80%;
-                        height: 400px;
+                        height: 500px;
                     }
                     aside{
                         width: 90%;
@@ -371,7 +373,7 @@
                 .services-box {
                     span {
                         width: 90%;
-                        height: 320px;
+                        height: 400px;
                     }
                     aside {
                         h2 {
