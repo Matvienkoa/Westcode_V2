@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" prefix="og: https://ogp.me/ns#">
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Westcode, Studio de Développement, vous accompagne dans votre transition numérique, dans le développement de vos projets Web, dans votre marketing et votre communication : Développement Site Web Vitrine, Application Web, PWA, Application Mobile, Outils Internes, Référencement SEO/SEA/Mediabuy, Communication/Marketing Web">
@@ -9,6 +9,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Westcode Développement - Studio de Développement</title>
+        <meta property="og:image" content="assets/images/mini.png" />
         <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -76,9 +77,9 @@
                     <a href="contact.html"><input id="button-index" type="button" value="Contactez Nous"></a>
                 </div>
                 <div id="video">
-                    
-                    <video src="assets/videos/prez-logo-3.mp4" id="sample" autoplay="true" muted="true" loop="true"></video>
-                    <!-- autoplay="true" muted="true" loop="true" -->
+                    <video id="sample" autoplay="true" preload="none" muted="true" loop="true" playsinline="true">
+                        <source type="video/mp4" src="assets/videos/prez-logo-3.mp4">
+                    </video>
                 </div>
             </div>
         </div>
@@ -199,7 +200,7 @@
                         <h2>Ils nous font confiance!</h2>
                         <p>Certains sont experts de l'entretien de votre véhicule, d'autres de votre cave à vins!
                         Leur Point Commun : leur Satisfaction!
-                        Découvrirez comment WestCode les a accompagnés dans leurs Projets!</p>
+                        Découvrez comment WestCode les a accompagnés dans leurs Projets!</p>
                     </span>
                     <span id="bloc-logo">
                         <img src="assets/images/sites/directauto.png" alt="Logo de l'entreprise cliente" id="customer-logo" class="apparition-logo">

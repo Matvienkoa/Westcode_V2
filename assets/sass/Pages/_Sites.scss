@@ -9,10 +9,8 @@
         height: 100%;
         object-fit: cover;
         overflow: hidden;
-        -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.png);
-            mask-image: url(https//test-wc.fr/assets/images/ju.png);
-            // -webkit-mask-image: url(/assets/images/ju.png);
-            // mask-image: url(/assets/images/ju.png);
+        -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.svg);
+        mask-image: url(/assets/images/ju.svg);
         -webkit-mask-position: center;
         mask-position: center;
         -webkit-mask-size: 110%;

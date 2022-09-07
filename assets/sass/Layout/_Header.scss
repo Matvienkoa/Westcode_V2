@@ -63,6 +63,20 @@ header {
             display: flex;
             align-items: center;
             margin-right: 10px;
+            a {
+                display: inline-block;
+            }
+            a::after {
+                content: '';
+                display: block;
+                transform: scale(0);
+                height: 2px;
+                background: $COLORSEC;
+                transition: transform .4s;
+            }
+            a:hover::after {
+                transform: scale(1);
+            }
         }
     }
 }
@@ -176,6 +190,26 @@ header {
             li{
                 list-style: none;
                 margin: 0 5px 0 5px;
+                a {
+                    text-decoration: none;
+                    color: white;
+                    display: inline-block;
+                    font-size: 1.5em;
+                    cursor: pointer;
+                }
+            
+                a::after {
+                    content: '';
+                    display: block;
+                    transform: scale(0);
+                    height: 2px;
+                    background: $COLORSEC;
+                    transition: transform .4s;
+                }
+            
+                a:hover::after {
+                    transform: scale(1);
+                }
             }
         }
     }

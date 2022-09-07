@@ -89,7 +89,8 @@
                 transition: background-color 600ms, color 400ms;
                 @include Font-Title-h1-8;
                 text-transform: uppercase;
-            
+                border-radius: 0;
+                -webkit-appearance: none;
                 &:hover {
                     color: black;
                     background-color: $COLORSEC;

@@ -65,6 +65,8 @@ body {
         transition: background-color 600ms, color 400ms;
         @include Font-Title-h1-8;
         text-transform: uppercase;
+        border-radius: 0;
+        -webkit-appearance: none;
         &:hover {
             color: black;
             background-color: $COLORSEC;
@@ -82,11 +84,8 @@ body {
         height: 100%;
         object-fit: cover;
         object-position: top;
-        overflow: hidden;
-        -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.png);
-        mask-image: url(https//test-wc.fr/assets/images/ju.png);
-        // -webkit-mask-image: url(/assets/images/ju.png);
-        // mask-image: url(/assets/images/ju.png);
+        -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.svg);
+        mask-image: url(/assets/images/ju.svg);
         -webkit-mask-position: center;
         mask-position: center;
         -webkit-mask-size: 110%;
@@ -124,6 +123,7 @@ body {
         font-size: 1.4em;
         @include Font-p-1;
         font-weight: 100;
+        letter-spacing: 0.8px;
     }
 }
 
@@ -185,10 +185,8 @@ body {
             height: 100%;
             object-fit: cover;
             object-position: center;
-            -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.png);
-                mask-image: url(https//test-wc.fr/assets/images/ju.png);
-                // -webkit-mask-image: url(/assets/images/ju.png);
-                // mask-image: url(/assets/images/ju.png);
+            -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.svg);
+            mask-image: url(/assets/images/ju.svg);
             -webkit-mask-position: center;
             mask-position: center;
             -webkit-mask-size: 130%;
@@ -328,6 +326,8 @@ body {
         margin-top: 30px;
         @include Font-p-1;
         text-transform: uppercase;
+        border-radius: 0;
+        -webkit-appearance: none;
         &:hover {
             color: black;
             background-color: $COLORSEC;
@@ -343,10 +343,8 @@ body {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.png);
-            mask-image: url(https//test-wc.fr/assets/images/ju.png);
-            // -webkit-mask-image: url(/assets/images/ju.png);
-            // mask-image: url(/assets/images/ju.png);
+        -webkit-mask-image: url(https://test-wc.fr/assets/images/ju.svg);
+        mask-image: url(/assets/images/ju.svg);
         -webkit-mask-position: center;
         mask-position: center;
         -webkit-mask-size: 120%;

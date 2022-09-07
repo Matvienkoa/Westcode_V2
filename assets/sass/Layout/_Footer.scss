@@ -52,6 +52,22 @@ footer {
         padding: 0;
         li {
             margin-right: 10px;
+            a {
+                text-decoration: none;
+                color: white;
+                display: inline-block;
+            }
+            a::after {
+                content: '';
+                display: block;
+                transform: scale(0);
+                height: 2px;
+                background: $COLORSEC;
+                transition: transform .4s;
+            }
+            a:hover::after {
+                transform: scale(1);
+            }
         }
     }
 }
