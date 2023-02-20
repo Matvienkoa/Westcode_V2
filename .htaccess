@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} ^www.test-wc.fr [NC]
-RewriteRule ^(.*)$ https://test-wc.fr/$1 [L,R=301]
+RewriteCond %{HTTP_HOST} ^www.westcode-dev.fr [NC]
+RewriteRule ^(.*)$ https://westcode-dev.fr/$1 [L,R=301]
 
 RewriteEngine on
 RewriteCond %{HTTPS} !=on
